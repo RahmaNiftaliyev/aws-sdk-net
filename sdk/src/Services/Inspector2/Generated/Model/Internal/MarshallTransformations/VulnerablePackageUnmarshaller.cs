@@ -112,6 +112,12 @@ namespace Amazon.Inspector2.Model.Internal.MarshallTransformations
                     unmarshalledObject.Remediation = unmarshaller.Unmarshall(context);
                     continue;
                 }
+                if (context.TestExpression("sourceLambdaLayerArn", targetDepth))
+                {
+                    var unmarshaller = StringUnmarshaller.Instance;
+                    unmarshalledObject.SourceLambdaLayerArn = unmarshaller.Unmarshall(context);
+                    continue;
+                }
                 if (context.TestExpression("sourceLayerHash", targetDepth))
                 {
                     var unmarshaller = StringUnmarshaller.Instance;
