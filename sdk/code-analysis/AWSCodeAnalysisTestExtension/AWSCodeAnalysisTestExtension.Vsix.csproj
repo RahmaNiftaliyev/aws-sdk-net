@@ -456,6 +456,10 @@
       <Project>{2639D3F6-28D8-4397-9102-F62B0DB9F79A}</Project>
       <Name>AWSSDK.DocDB.CodeAnalysis</Name>
     </ProjectReference>
+    <ProjectReference Include="../ServiceAnalysis/DocDBElastic/AWSSDK.DocDBElastic.CodeAnalysis.csproj">
+      <Project>{0BB0B4D7-ABB2-42F6-8E7A-7A98D9EDF1BE}</Project>
+      <Name>AWSSDK.DocDBElastic.CodeAnalysis</Name>
+    </ProjectReference>
     <ProjectReference Include="../ServiceAnalysis/Drs/AWSSDK.Drs.CodeAnalysis.csproj">
       <Project>{79B56D45-9B73-43E0-A867-851B2ED279B3}</Project>
       <Name>AWSSDK.Drs.CodeAnalysis</Name>
@@ -1155,6 +1159,10 @@
     <ProjectReference Include="../ServiceAnalysis/SageMakerFeatureStoreRuntime/AWSSDK.SageMakerFeatureStoreRuntime.CodeAnalysis.csproj">
       <Project>{FC99DFC4-831C-4B14-8D6F-6852BE29C478}</Project>
       <Name>AWSSDK.SageMakerFeatureStoreRuntime.CodeAnalysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="../ServiceAnalysis/SageMakerGeospatial/AWSSDK.SageMakerGeospatial.CodeAnalysis.csproj">
+      <Project>{67B70D70-8A47-49ED-B136-B039E557E6B6}</Project>
+      <Name>AWSSDK.SageMakerGeospatial.CodeAnalysis</Name>
     </ProjectReference>
     <ProjectReference Include="../ServiceAnalysis/SageMakerRuntime/AWSSDK.SageMakerRuntime.CodeAnalysis.csproj">
       <Project>{D706F3A1-9553-4B25-8BEC-7B68DE5360FD}</Project>
