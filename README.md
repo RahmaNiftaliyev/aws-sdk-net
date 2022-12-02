@@ -232,6 +232,8 @@ Unit tests can be found in the **AWSSDK.UnitTests** project.
 	* Added support for AWS CodeArtifact.
 * [AWSSDK.CodeBuild](https://www.nuget.org/packages/AWSSDK.CodeBuild/)
 	* AWS CodeBuild is a fully-managed build service in the cloud. AWS CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.
+* [AWSSDK.CodeCatalyst](https://www.nuget.org/packages/AWSSDK.CodeCatalyst/)
+	* This release adds operations that support customers using the AWS Toolkits and Amazon CodeCatalyst, a unified software development service that helps developers develop, deploy, and maintain applications in the cloud. For more information, see the documentation.
 * [AWSSDK.CodeCommit](https://www.nuget.org/packages/AWSSDK.CodeCommit/)
 	* AWS CodeCommit is a fully-managed source control service that makes it easy for companies to host secure and highly scalable private Git repositories.
 * [AWSSDK.CodeDeploy](https://www.nuget.org/packages/AWSSDK.CodeDeploy/)
@@ -592,6 +594,8 @@ Unit tests can be found in the **AWSSDK.UnitTests** project.
 	* With Amazon Pinpoint Voice, you can use text-to-speech technology to deliver personalized voice messages to your customers. Amazon Pinpoint Voice is a way to deliver transactional messages -- such as one-time passwords and appointment confirmations to customers.
 * [AWSSDK.PinpointSMSVoiceV2](https://www.nuget.org/packages/AWSSDK.PinpointSMSVoiceV2/)
 	* Amazon Pinpoint now offers a version 2.0 suite of SMS and voice APIs, providing increased control over sending and configuration. This release is a new SDK for sending SMS and voice messages called PinpointSMSVoiceV2.
+* [AWSSDK.Pipes](https://www.nuget.org/packages/AWSSDK.Pipes/)
+	* AWS introduces new Amazon EventBridge Pipes which allow you to connect sources (SQS, Kinesis, DDB, Kafka, MQ) to Targets (14+ EventBridge Targets) without any code, with filtering, batching, input transformation, and an optional Enrichment stage (Lambda, StepFunctions, ApiGateway, ApiDestinations)
 * [AWSSDK.Polly](https://www.nuget.org/packages/AWSSDK.Polly/)
 	* Amazon Polly is a service that turns text into lifelike speech, making it easy to develop applications that use high-quality speech to increase engagement and accessibility.
 * [AWSSDK.Pricing](https://www.nuget.org/packages/AWSSDK.Pricing/)

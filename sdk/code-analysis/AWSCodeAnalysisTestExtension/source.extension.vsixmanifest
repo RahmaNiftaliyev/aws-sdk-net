@@ -143,6 +143,8 @@
     <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.CodeArtifact.CodeAnalysis" Path="|AWSSDK.CodeArtifact.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.CodeBuild.CodeAnalysis" Path="|AWSSDK.CodeBuild.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.CodeBuild.CodeAnalysis" Path="|AWSSDK.CodeBuild.CodeAnalysis|"/>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.CodeCatalyst.CodeAnalysis" Path="|AWSSDK.CodeCatalyst.CodeAnalysis|"/>
+    <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.CodeCatalyst.CodeAnalysis" Path="|AWSSDK.CodeCatalyst.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.CodeCommit.CodeAnalysis" Path="|AWSSDK.CodeCommit.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.CodeCommit.CodeAnalysis" Path="|AWSSDK.CodeCommit.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.CodeDeploy.CodeAnalysis" Path="|AWSSDK.CodeDeploy.CodeAnalysis|"/>
@@ -503,6 +505,8 @@
     <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.PinpointSMSVoice.CodeAnalysis" Path="|AWSSDK.PinpointSMSVoice.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.PinpointSMSVoiceV2.CodeAnalysis" Path="|AWSSDK.PinpointSMSVoiceV2.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.PinpointSMSVoiceV2.CodeAnalysis" Path="|AWSSDK.PinpointSMSVoiceV2.CodeAnalysis|"/>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.Pipes.CodeAnalysis" Path="|AWSSDK.Pipes.CodeAnalysis|"/>
+    <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.Pipes.CodeAnalysis" Path="|AWSSDK.Pipes.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.Polly.CodeAnalysis" Path="|AWSSDK.Polly.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.Analyzer" d:Source="Project" d:ProjectName="AWSSDK.Polly.CodeAnalysis" Path="|AWSSDK.Polly.CodeAnalysis|"/>
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="AWSSDK.Pricing.CodeAnalysis" Path="|AWSSDK.Pricing.CodeAnalysis|"/>
