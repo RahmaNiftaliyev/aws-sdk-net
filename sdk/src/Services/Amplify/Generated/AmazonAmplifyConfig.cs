@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Amplify.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Amplify
     /// <summary>
     /// Configuration for accessing Amazon Amplify service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonAmplifyConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.10");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.12");
 
         private string _userAgent = UserAgentString;
 

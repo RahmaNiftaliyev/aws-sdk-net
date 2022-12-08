@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.CloudWatch.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.CloudWatch
     /// <summary>
     /// Configuration for accessing Amazon CloudWatch service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonCloudWatchConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.7");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.9");
 
         private string _userAgent = UserAgentString;
 

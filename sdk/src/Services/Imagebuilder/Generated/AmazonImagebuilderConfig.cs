@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Imagebuilder.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Imagebuilder
     /// <summary>
     /// Configuration for accessing Amazon Imagebuilder service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonImagebuilderConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.30");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.32");
 
         private string _userAgent = UserAgentString;
 

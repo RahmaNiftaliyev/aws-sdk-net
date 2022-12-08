@@ -29,8 +29,7 @@ using Amazon.Runtime.Internal;
 namespace Amazon.CloudFront.Model
 {
     /// <summary>
-    /// Contains the percentage of traffic to send to a staging distribution, expressed as
-    /// a decimal number between 0 and 1.
+    /// Contains the percentage of traffic to send to a staging distribution.
     /// </summary>
     public partial class ContinuousDeploymentSingleWeightConfig
     {
@@ -55,8 +54,8 @@ namespace Amazon.CloudFront.Model
         /// <summary>
         /// Gets and sets the property Weight. 
         /// <para>
-        /// The percentage of traffic to send to the staging distribution, expressed as a decimal
-        /// number between 0 and 1.
+        /// The percentage of traffic to send to a staging distribution, expressed as a decimal
+        /// number between 0 and .15.
         /// </para>
         /// </summary>
         [AWSProperty(Required=true)]

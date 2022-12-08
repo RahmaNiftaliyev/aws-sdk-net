@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.DataSync.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.DataSync
     /// <summary>
     /// Configuration for accessing Amazon DataSync service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonDataSyncConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.29");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.31");
 
         private string _userAgent = UserAgentString;
 

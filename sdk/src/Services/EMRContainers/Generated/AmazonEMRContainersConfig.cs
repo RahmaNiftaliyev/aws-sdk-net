@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.EMRContainers.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.EMRContainers
     /// <summary>
     /// Configuration for accessing Amazon EMRContainers service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonEMRContainersConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.21");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.23");
 
         private string _userAgent = UserAgentString;
 

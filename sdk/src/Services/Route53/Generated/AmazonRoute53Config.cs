@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Route53.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Route53
     /// <summary>
     /// Configuration for accessing Amazon Route53 service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonRoute53Config : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.103.9");
+            InternalSDKUtils.BuildUserAgentString("3.7.103.11");
 
         private string _userAgent = UserAgentString;
 

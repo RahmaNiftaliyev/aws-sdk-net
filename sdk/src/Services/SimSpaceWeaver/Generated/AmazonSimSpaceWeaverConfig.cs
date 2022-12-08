@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.SimSpaceWeaver.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.SimSpaceWeaver
     /// <summary>
     /// Configuration for accessing Amazon SimSpaceWeaver service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonSimSpaceWeaverConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.5");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.7");
 
         private string _userAgent = UserAgentString;
 

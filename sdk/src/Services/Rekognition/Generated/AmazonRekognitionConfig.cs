@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Rekognition.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Rekognition
     /// <summary>
     /// Configuration for accessing Amazon Rekognition service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonRekognitionConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.14");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.16");
 
         private string _userAgent = UserAgentString;
 

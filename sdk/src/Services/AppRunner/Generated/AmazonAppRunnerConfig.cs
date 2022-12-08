@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.AppRunner.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.AppRunner
     /// <summary>
     /// Configuration for accessing Amazon AppRunner service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonAppRunnerConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.102.23");
+            InternalSDKUtils.BuildUserAgentString("3.7.102.25");
 
         private string _userAgent = UserAgentString;
 

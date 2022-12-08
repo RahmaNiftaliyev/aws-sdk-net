@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.IoT.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.IoT
     /// <summary>
     /// Configuration for accessing Amazon IoT service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonIoTConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.103.7");
+            InternalSDKUtils.BuildUserAgentString("3.7.103.9");
 
         private string _userAgent = UserAgentString;
 

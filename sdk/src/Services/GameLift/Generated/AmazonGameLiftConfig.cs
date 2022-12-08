@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.GameLift.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.GameLift
     /// <summary>
     /// Configuration for accessing Amazon GameLift service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonGameLiftConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.3");
+            InternalSDKUtils.BuildUserAgentString("3.7.102.0");
 
         private string _userAgent = UserAgentString;
 

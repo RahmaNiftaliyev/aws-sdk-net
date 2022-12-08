@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Kafka.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Kafka
     /// <summary>
     /// Configuration for accessing Amazon Kafka service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonKafkaConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.27");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.29");
 
         private string _userAgent = UserAgentString;
 

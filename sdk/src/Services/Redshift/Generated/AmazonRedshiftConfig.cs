@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Redshift.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Redshift
     /// <summary>
     /// Configuration for accessing Amazon Redshift service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonRedshiftConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.30");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.32");
 
         private string _userAgent = UserAgentString;
 

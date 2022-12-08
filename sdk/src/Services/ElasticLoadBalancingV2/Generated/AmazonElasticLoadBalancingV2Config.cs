@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.ElasticLoadBalancingV2.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.ElasticLoadBalancingV2
     /// <summary>
     /// Configuration for accessing Amazon ElasticLoadBalancingV2 service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonElasticLoadBalancingV2Config : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.30");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.32");
 
         private string _userAgent = UserAgentString;
 

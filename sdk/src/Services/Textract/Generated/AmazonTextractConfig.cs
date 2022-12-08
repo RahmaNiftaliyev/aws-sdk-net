@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Textract.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Textract
     /// <summary>
     /// Configuration for accessing Amazon Textract service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonTextractConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.104.7");
+            InternalSDKUtils.BuildUserAgentString("3.7.104.9");
 
         private string _userAgent = UserAgentString;
 

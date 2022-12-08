@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.OAM.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.OAM
     /// <summary>
     /// Configuration for accessing Amazon OAM service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonOAMConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.7");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.9");
 
         private string _userAgent = UserAgentString;
 

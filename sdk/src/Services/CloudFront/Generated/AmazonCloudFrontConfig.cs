@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.CloudFront.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.CloudFront
     /// <summary>
     /// Configuration for accessing Amazon CloudFront service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonCloudFrontConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.9");
+            InternalSDKUtils.BuildUserAgentString("3.7.102.1");
 
         private string _userAgent = UserAgentString;
 

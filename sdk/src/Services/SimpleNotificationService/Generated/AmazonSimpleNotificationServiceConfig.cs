@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.SimpleNotificationService.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.SimpleNotificationService
     /// <summary>
     /// Configuration for accessing Amazon SimpleNotificationService service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonSimpleNotificationServiceConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.31");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.33");
 
         private string _userAgent = UserAgentString;
 

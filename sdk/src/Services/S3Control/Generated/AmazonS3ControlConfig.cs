@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.S3Control.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.S3Control
     /// <summary>
     /// Configuration for accessing Amazon S3Control service
     /// </summary>
+    [AWSSignerType("s3v4")]
     public partial class AmazonS3ControlConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.104.4");
+            InternalSDKUtils.BuildUserAgentString("3.7.104.6");
 
         private string _userAgent = UserAgentString;
 

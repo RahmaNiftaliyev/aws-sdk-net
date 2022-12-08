@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.DocDBElastic.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.DocDBElastic
     /// <summary>
     /// Configuration for accessing Amazon DocDBElastic service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonDocDBElasticConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.4");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.6");
 
         private string _userAgent = UserAgentString;
 

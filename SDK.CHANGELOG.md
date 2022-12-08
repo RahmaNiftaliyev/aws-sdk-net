@@ -1,3 +1,23 @@
+### 3.7.435.0 (2022-12-08 00:46 UTC)
+* GameLift (3.7.102.0)
+	* Add service customization to generate IsSet property for GameLift (PlayerLatencyPolicies and Destinations).
+* Core 3.7.102.0
+	* Fixed issue with infinite recursion when using the same profile name and sso-session name in the credentials file; Improved support for bearer tokens in net45, netstandard targets.
+	* All services packages updated to require new Core
+
+### 3.7.434.0 (2022-12-07 19:48 UTC)
+* CloudFront (3.7.102.0)
+	* Introducing UpdateDistributionWithStagingConfig that can be used to promote the staging configuration to the production.
+* CostExplorer (3.7.102.0)
+	* This release adds the LinkedAccountName field to the GetAnomalies API response under RootCause
+* EKS (3.7.103.0)
+	* Adds support for EKS add-ons configurationValues fields and DescribeAddonConfiguration function
+* KeyManagementService (3.7.101.6)
+	* Updated examples and exceptions for External Key Store (XKS).
+* Core 3.7.101.3
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.433.0 (2022-12-06 20:39 UTC)
 * BillingConductor (3.7.103.0)
 	* This release adds the Tiering Pricing Rule feature.

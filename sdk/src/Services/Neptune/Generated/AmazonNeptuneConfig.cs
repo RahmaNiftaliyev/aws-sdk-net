@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Neptune.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Neptune
     /// <summary>
     /// Configuration for accessing Amazon Neptune service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonNeptuneConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.27");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.29");
 
         private string _userAgent = UserAgentString;
 

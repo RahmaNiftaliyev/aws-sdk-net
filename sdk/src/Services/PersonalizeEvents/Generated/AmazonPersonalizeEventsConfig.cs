@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.PersonalizeEvents.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.PersonalizeEvents
     /// <summary>
     /// Configuration for accessing Amazon PersonalizeEvents service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonPersonalizeEventsConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.11");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.13");
 
         private string _userAgent = UserAgentString;
 

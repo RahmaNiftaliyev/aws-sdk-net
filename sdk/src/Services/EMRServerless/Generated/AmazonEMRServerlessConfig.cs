@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.EMRServerless.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.EMRServerless
     /// <summary>
     /// Configuration for accessing Amazon EMRServerless service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonEMRServerlessConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.10");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.12");
 
         private string _userAgent = UserAgentString;
 

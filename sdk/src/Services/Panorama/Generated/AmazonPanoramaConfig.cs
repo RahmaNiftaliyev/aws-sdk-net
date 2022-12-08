@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Panorama.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Panorama
     /// <summary>
     /// Configuration for accessing Amazon Panorama service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonPanoramaConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.30");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.32");
 
         private string _userAgent = UserAgentString;
 

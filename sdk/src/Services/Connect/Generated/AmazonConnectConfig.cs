@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.Connect.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.Connect
     /// <summary>
     /// Configuration for accessing Amazon Connect service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonConnectConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.106.0");
+            InternalSDKUtils.BuildUserAgentString("3.7.106.2");
 
         private string _userAgent = UserAgentString;
 

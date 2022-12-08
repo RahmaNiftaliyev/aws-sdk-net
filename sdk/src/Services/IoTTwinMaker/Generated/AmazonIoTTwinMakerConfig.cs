@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.IoTTwinMaker.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.IoTTwinMaker
     /// <summary>
     /// Configuration for accessing Amazon IoTTwinMaker service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonIoTTwinMakerConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.11");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.13");
 
         private string _userAgent = UserAgentString;
 

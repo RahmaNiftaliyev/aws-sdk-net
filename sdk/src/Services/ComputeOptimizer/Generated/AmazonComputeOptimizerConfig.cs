@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.ComputeOptimizer.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.ComputeOptimizer
     /// <summary>
     /// Configuration for accessing Amazon ComputeOptimizer service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonComputeOptimizerConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.6");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.8");
 
         private string _userAgent = UserAgentString;
 

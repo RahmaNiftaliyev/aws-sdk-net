@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.MQ.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.MQ
     /// <summary>
     /// Configuration for accessing Amazon MQ service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonMQConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.100.30");
+            InternalSDKUtils.BuildUserAgentString("3.7.100.32");
 
         private string _userAgent = UserAgentString;
 

@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.AuditManager.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.AuditManager
     /// <summary>
     /// Configuration for accessing Amazon AuditManager service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonAuditManagerConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.9");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.11");
 
         private string _userAgent = UserAgentString;
 

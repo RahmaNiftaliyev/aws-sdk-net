@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.FMS.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.FMS
     /// <summary>
     /// Configuration for accessing Amazon FMS service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonFMSConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.103.2");
+            InternalSDKUtils.BuildUserAgentString("3.7.103.4");
 
         private string _userAgent = UserAgentString;
 

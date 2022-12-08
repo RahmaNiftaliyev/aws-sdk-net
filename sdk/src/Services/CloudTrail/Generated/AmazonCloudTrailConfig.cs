@@ -19,6 +19,7 @@
 
 using System;
 using Amazon.Runtime;
+using Amazon.Runtime.Internal;
 using Amazon.Util.Internal;
 using Amazon.CloudTrail.Internal;
 
@@ -27,10 +28,11 @@ namespace Amazon.CloudTrail
     /// <summary>
     /// Configuration for accessing Amazon CloudTrail service
     /// </summary>
+    [AWSSignerType("v4")]
     public partial class AmazonCloudTrailConfig : ClientConfig
     {
         private static readonly string UserAgentString =
-            InternalSDKUtils.BuildUserAgentString("3.7.101.20");
+            InternalSDKUtils.BuildUserAgentString("3.7.101.22");
 
         private string _userAgent = UserAgentString;
 
