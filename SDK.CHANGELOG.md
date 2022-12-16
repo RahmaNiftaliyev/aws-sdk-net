@@ -1,3 +1,82 @@
+### 3.7.442.0 (2022-12-16 00:44 UTC)
+* Core 3.7.103.0
+	* Bug fix: fix access denied exception when reading read-only cached SSO token files located in .aws directory; Feat: Add support for AWS_SHARED_CREDENTIALS_FILE environment variable.
+	* All services packages updated to require new Core
+
+### 3.7.441.0 (2022-12-15 19:32 UTC)
+* BackupGateway (3.7.101.0)
+	* This release adds support for VMware vSphere tags, enabling customer to protect VMware virtual machines using tag-based policies for AWS tags mapped from vSphere tags. This release also adds support for customer-accessible gateway-hypervisor interaction log and upload bandwidth rate limit schedule.
+* Connect (3.7.107.0)
+	* Added support for "English - New Zealand" and "English - South African" to be used with Amazon Connect Custom Vocabulary APIs.
+* ECS (3.7.103.0)
+	* This release adds support for container port ranges in ECS, a new capability that allows customers to provide container port ranges to simplify use cases where multiple ports are in use in a container. This release updates TaskDefinition mutation APIs and the Task description APIs.
+* EKS (3.7.104.0)
+	* Add support for Windows managed nodes groups.
+* Glue (3.7.105.0)
+	* This release adds support for AWS Glue Crawler with native DeltaLake tables, allowing Crawlers to classify Delta Lake format tables and catalog them for query engines to query against.
+* Kinesis (3.7.101.0)
+	* Added StreamARN parameter for Kinesis Data Streams APIs. Added a new opaque pagination token for ListStreams. SDKs will auto-generate Account Endpoint when accessing Kinesis Data Streams.
+* LocationService (3.7.100.37)
+	* This release adds support for a new style, "VectorOpenDataStandardLight" which can be used with the new data source, "Open Data Maps (Preview)".
+* MainframeModernization (3.7.101.0)
+	* Adds an optional create-only `KmsKeyId` property to Environment and Application resources.
+* SageMaker (3.7.109.0)
+	* SageMaker Inference Recommender now allows customers to load tests their models on various instance types using private VPC.
+* SecurityHub (3.7.103.0)
+	* Added new resource details objects to ASFF, including resources for AwsEc2LaunchTemplate, AwsSageMakerNotebookInstance, AwsWafv2WebAcl and AwsWafv2RuleGroup.
+* Translate (3.7.101.0)
+	* Raised the input byte size limit of the Text field in the TranslateText API to 10000 bytes.
+* Core 3.7.102.5
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.440.0 (2022-12-14 19:29 UTC)
+* CloudWatch (3.7.102.0)
+	* Adding support for Metrics Insights Alarms
+* CostExplorer (3.7.103.0)
+	* This release supports percentage-based thresholds on Cost Anomaly Detection alert subscriptions.
+* NetworkManager (3.7.101.0)
+	* Appliance Mode support for AWS Cloud WAN.
+* RedshiftDataAPIService (3.7.101.0)
+	* This release adds a new --client-token field to ExecuteStatement and BatchExecuteStatement operations. Customers can now run queries with the additional client token parameter to ensures idempotency.
+* SageMakerMetrics (3.7.100.2)
+	* Update SageMaker Metrics documentation.
+* Core 3.7.102.4
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.439.0 (2022-12-13 19:28 UTC)
+* CloudTrail (3.7.102.0)
+	* Merging mainline branch for service model into mainline release branch. There are no new APIs.
+* RDS (3.7.109.0)
+	* This deployment adds ClientPasswordAuthType field to the Auth structure of the DBProxy.
+* Core 3.7.102.3
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.438.0 (2022-12-12 19:30 UTC)
+* CustomerProfiles (3.7.102.0)
+	* This release allows custom strings in PartyType and Gender through 2 new attributes in the CreateProfile and UpdateProfile APIs: PartyTypeString and GenderString.
+* EC2 (3.7.113.0)
+	* This release updates DescribeFpgaImages to show supported instance types of AFIs in its response.
+* KinesisVideo (3.7.101.0)
+	* This release adds support for public preview of Kinesis Video Stream at Edge enabling customers to provide configuration for the Kinesis Video Stream EdgeAgent running on an on-premise IoT device. Customers can now locally record from cameras and stream videos to the cloud on configured schedule.
+* LookoutforVision (3.7.100.34)
+	* This documentation update adds kms:GenerateDataKey as a required permission to StartModelPackagingJob.
+* MigrationHubRefactorSpaces (3.7.101.0)
+	* This release adds support for Lambda alias service endpoints. Lambda alias ARNs can now be passed into CreateService.
+* RDS (3.7.108.0)
+	* Update the RDS API model to support copying option groups during the CopyDBSnapshot operation
+* Rekognition (3.7.102.0)
+	* Adds support for "aliases" and "categories", inclusion and exclusion filters for labels and label categories, and aggregating labels by video segment timestamps for Stored Video Label Detection APIs.
+* SageMakerMetrics (3.7.100.0)
+	* This release introduces support SageMaker Metrics APIs.
+* WAFV2 (3.7.101.30)
+	* Documents the naming requirement for logging destinations that you use with web ACLs.
+* Core 3.7.102.2
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.437.0 (2022-12-09 19:21 UTC)
 * CloudWatchLogs (3.7.102.11)
 	* Doc-only update for CloudWatch Logs, for Tagging Permissions clarifications

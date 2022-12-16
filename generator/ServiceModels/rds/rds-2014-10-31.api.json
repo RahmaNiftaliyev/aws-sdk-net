@@ -2895,6 +2895,15 @@
         "CharacterSetDescription":{"shape":"String"}
       }
     },
+    "ClientPasswordAuthType":{
+      "type":"string",
+      "enum":[
+        "MYSQL_NATIVE_PASSWORD",
+        "POSTGRES_SCRAM_SHA_256",
+        "POSTGRES_MD5",
+        "SQL_SERVER_AUTHENTICATION"
+      ]
+    },
     "CloudwatchLogsExportConfiguration":{
       "type":"structure",
       "members":{
@@ -3010,7 +3019,8 @@
         "CopyTags":{"shape":"BooleanOptional"},
         "PreSignedUrl":{"shape":"String"},
         "OptionGroupName":{"shape":"String"},
-        "TargetCustomAvailabilityZone":{"shape":"String"}
+        "TargetCustomAvailabilityZone":{"shape":"String"},
+        "CopyOptionGroup":{"shape":"BooleanOptional"}
       }
     },
     "CopyDBSnapshotResult":{
@@ -6940,7 +6950,10 @@
         "Options":{"shape":"OptionsList"},
         "AllowsVpcAndNonVpcInstanceMemberships":{"shape":"Boolean"},
         "VpcId":{"shape":"String"},
-        "OptionGroupArn":{"shape":"String"}
+        "OptionGroupArn":{"shape":"String"},
+        "SourceOptionGroup":{"shape":"String"},
+        "SourceAccountId":{"shape":"String"},
+        "CopyTimestamp":{"shape":"TStamp"}
       },
       "wrapper":true
     },
@@ -6998,7 +7011,8 @@
         "VpcOnly":{"shape":"Boolean"},
         "SupportsOptionVersionDowngrade":{"shape":"BooleanOptional"},
         "OptionGroupOptionSettings":{"shape":"OptionGroupOptionSettingsList"},
-        "OptionGroupOptionVersions":{"shape":"OptionGroupOptionVersionsList"}
+        "OptionGroupOptionVersions":{"shape":"OptionGroupOptionVersionsList"},
+        "CopyableCrossAccount":{"shape":"BooleanOptional"}
       }
     },
     "OptionGroupOptionSetting":{
@@ -8583,7 +8597,8 @@
         "UserName":{"shape":"String"},
         "AuthScheme":{"shape":"AuthScheme"},
         "SecretArn":{"shape":"String"},
-        "IAMAuth":{"shape":"IAMAuthMode"}
+        "IAMAuth":{"shape":"IAMAuthMode"},
+        "ClientPasswordAuthType":{"shape":"ClientPasswordAuthType"}
       }
     },
     "UserAuthConfigInfo":{
@@ -8593,7 +8608,8 @@
         "UserName":{"shape":"String"},
         "AuthScheme":{"shape":"AuthScheme"},
         "SecretArn":{"shape":"String"},
-        "IAMAuth":{"shape":"IAMAuthMode"}
+        "IAMAuth":{"shape":"IAMAuthMode"},
+        "ClientPasswordAuthType":{"shape":"ClientPasswordAuthType"}
       }
     },
     "UserAuthConfigInfoList":{

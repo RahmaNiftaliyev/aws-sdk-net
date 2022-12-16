@@ -100,6 +100,12 @@ namespace Amazon.BackupGateway.Model.Internal.MarshallTransformations
                     unmarshalledObject.ResourceArn = unmarshaller.Unmarshall(context);
                     continue;
                 }
+                if (context.TestExpression("VmwareTags", targetDepth))
+                {
+                    var unmarshaller = new ListUnmarshaller<VmwareTag, VmwareTagUnmarshaller>(VmwareTagUnmarshaller.Instance);
+                    unmarshalledObject.VmwareTags = unmarshaller.Unmarshall(context);
+                    continue;
+                }
             }
           
             return unmarshalledObject;
