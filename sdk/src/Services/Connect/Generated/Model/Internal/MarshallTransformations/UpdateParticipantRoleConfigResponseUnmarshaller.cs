@@ -14,7 +14,7 @@
  */
 
 /*
- * Do not modify this file. This file is generated from the kinesis-video-webrtc-storage-2018-05-10.normal.json service model.
+ * Do not modify this file. This file is generated from the connect-2017-08-08.normal.json service model.
  */
 using System;
 using System.Collections.Generic;
@@ -24,19 +24,19 @@ using System.Net;
 using System.Text;
 using System.Xml.Serialization;
 
-using Amazon.KinesisVideoWebRTCStorage.Model;
+using Amazon.Connect.Model;
 using Amazon.Runtime;
 using Amazon.Runtime.Internal;
 using Amazon.Runtime.Internal.Transform;
 using Amazon.Runtime.Internal.Util;
 using ThirdParty.Json.LitJson;
 
-namespace Amazon.KinesisVideoWebRTCStorage.Model.Internal.MarshallTransformations
+namespace Amazon.Connect.Model.Internal.MarshallTransformations
 {
     /// <summary>
-    /// Response Unmarshaller for JoinStorageSessionAsViewer operation
+    /// Response Unmarshaller for UpdateParticipantRoleConfig operation
     /// </summary>  
-    public class JoinStorageSessionAsViewerResponseUnmarshaller : JsonResponseUnmarshaller
+    public class UpdateParticipantRoleConfigResponseUnmarshaller : JsonResponseUnmarshaller
     {
         /// <summary>
         /// Unmarshaller the response from the service to the response class.
@@ -45,7 +45,7 @@ namespace Amazon.KinesisVideoWebRTCStorage.Model.Internal.MarshallTransformation
         /// <returns></returns>
         public override AmazonWebServiceResponse Unmarshall(JsonUnmarshallerContext context)
         {
-            JoinStorageSessionAsViewerResponse response = new JoinStorageSessionAsViewerResponse();
+            UpdateParticipantRoleConfigResponse response = new UpdateParticipantRoleConfigResponse();
 
 
             return response;
@@ -73,25 +73,33 @@ namespace Amazon.KinesisVideoWebRTCStorage.Model.Internal.MarshallTransformation
                 {
                     return AccessDeniedExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
                 }
-                if (errorResponse.Code != null && errorResponse.Code.Equals("ClientLimitExceededException"))
+                if (errorResponse.Code != null && errorResponse.Code.Equals("InternalServiceException"))
                 {
-                    return ClientLimitExceededExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
+                    return InternalServiceExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
                 }
-                if (errorResponse.Code != null && errorResponse.Code.Equals("InvalidArgumentException"))
+                if (errorResponse.Code != null && errorResponse.Code.Equals("InvalidParameterException"))
                 {
-                    return InvalidArgumentExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
+                    return InvalidParameterExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
+                }
+                if (errorResponse.Code != null && errorResponse.Code.Equals("InvalidRequestException"))
+                {
+                    return InvalidRequestExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
                 }
                 if (errorResponse.Code != null && errorResponse.Code.Equals("ResourceNotFoundException"))
                 {
                     return ResourceNotFoundExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
                 }
+                if (errorResponse.Code != null && errorResponse.Code.Equals("ThrottlingException"))
+                {
+                    return ThrottlingExceptionUnmarshaller.Instance.Unmarshall(contextCopy, errorResponse);
+                }
             }
-            return new AmazonKinesisVideoWebRTCStorageException(errorResponse.Message, errorResponse.InnerException, errorResponse.Type, errorResponse.Code, errorResponse.RequestId, errorResponse.StatusCode);
+            return new AmazonConnectException(errorResponse.Message, errorResponse.InnerException, errorResponse.Type, errorResponse.Code, errorResponse.RequestId, errorResponse.StatusCode);
         }
 
-        private static JoinStorageSessionAsViewerResponseUnmarshaller _instance = new JoinStorageSessionAsViewerResponseUnmarshaller();        
+        private static UpdateParticipantRoleConfigResponseUnmarshaller _instance = new UpdateParticipantRoleConfigResponseUnmarshaller();        
 
-        internal static JoinStorageSessionAsViewerResponseUnmarshaller GetInstance()
+        internal static UpdateParticipantRoleConfigResponseUnmarshaller GetInstance()
         {
             return _instance;
         }
@@ -99,7 +107,7 @@ namespace Amazon.KinesisVideoWebRTCStorage.Model.Internal.MarshallTransformation
         /// <summary>
         /// Gets the singleton.
         /// </summary>  
-        public static JoinStorageSessionAsViewerResponseUnmarshaller Instance
+        public static UpdateParticipantRoleConfigResponseUnmarshaller Instance
         {
             get
             {
