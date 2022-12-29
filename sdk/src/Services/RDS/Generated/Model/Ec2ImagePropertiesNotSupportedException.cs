@@ -14,7 +14,7 @@
  */
 
 /*
- * Do not modify this file. This file is generated from the route53-recovery-control-config-2020-11-02.normal.json service model.
+ * Do not modify this file. This file is generated from the rds-2014-10-31.normal.json service model.
  */
 using System;
 using System.Collections.Generic;
@@ -26,45 +26,44 @@ using System.Net;
 using Amazon.Runtime;
 using Amazon.Runtime.Internal;
 
-namespace Amazon.Route53RecoveryControlConfig.Model
+namespace Amazon.RDS.Model
 {
     /// <summary>
-    /// 404 response - MalformedQueryString. The query string contains a syntax error or resource
-    /// not found.
+    /// The AMI configuration prerequisite has not been met.
     /// </summary>
     #if !NETSTANDARD
     [Serializable]
     #endif
-    public partial class ResourceNotFoundException : AmazonRoute53RecoveryControlConfigException
+    public partial class Ec2ImagePropertiesNotSupportedException : AmazonRDSException
     {
 
         /// <summary>
-        /// Constructs a new ResourceNotFoundException with the specified error
+        /// Constructs a new Ec2ImagePropertiesNotSupportedException with the specified error
         /// message.
         /// </summary>
         /// <param name="message">
         /// Describes the error encountered.
         /// </param>
-        public ResourceNotFoundException(string message) 
+        public Ec2ImagePropertiesNotSupportedException(string message) 
             : base(message) {}
 
         /// <summary>
-        /// Construct instance of ResourceNotFoundException
+        /// Construct instance of Ec2ImagePropertiesNotSupportedException
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>
-        public ResourceNotFoundException(string message, Exception innerException) 
+        public Ec2ImagePropertiesNotSupportedException(string message, Exception innerException) 
             : base(message, innerException) {}
 
         /// <summary>
-        /// Construct instance of ResourceNotFoundException
+        /// Construct instance of Ec2ImagePropertiesNotSupportedException
         /// </summary>
         /// <param name="innerException"></param>
-        public ResourceNotFoundException(Exception innerException) 
+        public Ec2ImagePropertiesNotSupportedException(Exception innerException) 
             : base(innerException) {}
 
         /// <summary>
-        /// Construct instance of ResourceNotFoundException
+        /// Construct instance of Ec2ImagePropertiesNotSupportedException
         /// </summary>
         /// <param name="message"></param>
         /// <param name="innerException"></param>
@@ -72,30 +71,30 @@ namespace Amazon.Route53RecoveryControlConfig.Model
         /// <param name="errorCode"></param>
         /// <param name="requestId"></param>
         /// <param name="statusCode"></param>
-        public ResourceNotFoundException(string message, Exception innerException, ErrorType errorType, string errorCode, string requestId, HttpStatusCode statusCode) 
+        public Ec2ImagePropertiesNotSupportedException(string message, Exception innerException, ErrorType errorType, string errorCode, string requestId, HttpStatusCode statusCode) 
             : base(message, innerException, errorType, errorCode, requestId, statusCode) {}
 
         /// <summary>
-        /// Construct instance of ResourceNotFoundException
+        /// Construct instance of Ec2ImagePropertiesNotSupportedException
         /// </summary>
         /// <param name="message"></param>
         /// <param name="errorType"></param>
         /// <param name="errorCode"></param>
         /// <param name="requestId"></param>
         /// <param name="statusCode"></param>
-        public ResourceNotFoundException(string message, ErrorType errorType, string errorCode, string requestId, HttpStatusCode statusCode) 
+        public Ec2ImagePropertiesNotSupportedException(string message, ErrorType errorType, string errorCode, string requestId, HttpStatusCode statusCode) 
             : base(message, errorType, errorCode, requestId, statusCode) {}
 
 
 #if !NETSTANDARD
         /// <summary>
-        /// Constructs a new instance of the ResourceNotFoundException class with serialized data.
+        /// Constructs a new instance of the Ec2ImagePropertiesNotSupportedException class with serialized data.
         /// </summary>
         /// <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
         /// <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
         /// <exception cref="T:System.ArgumentNullException">The <paramref name="info" /> parameter is null. </exception>
         /// <exception cref="T:System.Runtime.Serialization.SerializationException">The class name is null or <see cref="P:System.Exception.HResult" /> is zero (0). </exception>
-        protected ResourceNotFoundException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
+        protected Ec2ImagePropertiesNotSupportedException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context)
             : base(info, context)
         {
         }
