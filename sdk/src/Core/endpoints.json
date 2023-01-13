@@ -2634,6 +2634,7 @@
               "deprecated": true,
               "hostname": "fips.batch.us-west-2.amazonaws.com"
             },
+            "me-central-1": {},
             "me-south-1": {},
             "sa-east-1": {},
             "us-east-1": {
@@ -2806,6 +2807,21 @@
           },
           "isRegionalized": false,
           "partitionEndpoint": "aws-global"
+        },
+        "cleanrooms": {
+          "endpoints": {
+            "ap-northeast-1": {},
+            "ap-northeast-2": {},
+            "ap-southeast-1": {},
+            "ap-southeast-2": {},
+            "eu-central-1": {},
+            "eu-north-1": {},
+            "eu-west-1": {},
+            "eu-west-2": {},
+            "us-east-1": {},
+            "us-east-2": {},
+            "us-west-2": {}
+          }
         },
         "cloud9": {
           "endpoints": {
@@ -9785,6 +9801,94 @@
             }
           }
         },
+        "kendra-ranking": {
+          "defaults": {
+            "dnsSuffix": "api.aws",
+            "variants": [
+              {
+                "dnsSuffix": "api.aws",
+                "hostname": "{service}-fips.{region}.{dnsSuffix}",
+                "tags": [
+                  "fips"
+                ]
+              }
+            ]
+          },
+          "endpoints": {
+            "af-south-1": {
+              "hostname": "kendra-ranking.af-south-1.api.aws"
+            },
+            "ap-east-1": {
+              "hostname": "kendra-ranking.ap-east-1.api.aws"
+            },
+            "ap-northeast-2": {
+              "hostname": "kendra-ranking.ap-northeast-2.api.aws"
+            },
+            "ap-northeast-3": {
+              "hostname": "kendra-ranking.ap-northeast-3.api.aws"
+            },
+            "ap-south-2": {
+              "hostname": "kendra-ranking.ap-south-2.api.aws"
+            },
+            "ap-southeast-1": {
+              "hostname": "kendra-ranking.ap-southeast-1.api.aws"
+            },
+            "ap-southeast-2": {
+              "hostname": "kendra-ranking.ap-southeast-2.api.aws"
+            },
+            "ap-southeast-3": {
+              "hostname": "kendra-ranking.ap-southeast-3.api.aws"
+            },
+            "ca-central-1": {
+              "hostname": "kendra-ranking.ca-central-1.api.aws"
+            },
+            "eu-central-1": {
+              "hostname": "kendra-ranking.eu-central-1.api.aws"
+            },
+            "eu-central-2": {
+              "hostname": "kendra-ranking.eu-central-2.api.aws"
+            },
+            "eu-north-1": {
+              "hostname": "kendra-ranking.eu-north-1.api.aws"
+            },
+            "eu-south-1": {
+              "hostname": "kendra-ranking.eu-south-1.api.aws"
+            },
+            "eu-south-2": {
+              "hostname": "kendra-ranking.eu-south-2.api.aws"
+            },
+            "eu-west-1": {
+              "hostname": "kendra-ranking.eu-west-1.api.aws"
+            },
+            "eu-west-2": {
+              "hostname": "kendra-ranking.eu-west-2.api.aws"
+            },
+            "eu-west-3": {
+              "hostname": "kendra-ranking.eu-west-3.api.aws"
+            },
+            "me-central-1": {
+              "hostname": "kendra-ranking.me-central-1.api.aws"
+            },
+            "me-south-1": {
+              "hostname": "kendra-ranking.me-south-1.api.aws"
+            },
+            "sa-east-1": {
+              "hostname": "kendra-ranking.sa-east-1.api.aws"
+            },
+            "us-east-1": {
+              "hostname": "kendra-ranking.us-east-1.api.aws"
+            },
+            "us-east-2": {
+              "hostname": "kendra-ranking.us-east-2.api.aws"
+            },
+            "us-west-1": {
+              "hostname": "kendra-ranking.us-west-1.api.aws"
+            },
+            "us-west-2": {
+              "hostname": "kendra-ranking.us-west-2.api.aws"
+            }
+          }
+        },
         "kinesis": {
           "endpoints": {
             "af-south-1": {},
@@ -14516,6 +14620,7 @@
             "eu-west-1": {},
             "eu-west-2": {},
             "eu-west-3": {},
+            "me-central-1": {},
             "me-south-1": {},
             "sa-east-1": {},
             "us-east-1": {},
@@ -17519,6 +17624,7 @@
         },
         "ssm-sap": {
           "endpoints": {
+            "ap-southeast-2": {},
             "us-east-1": {}
           }
         },
@@ -19139,6 +19245,13 @@
               "deprecated": true,
               "hostname": "waf-regional-fips.eu-west-3.amazonaws.com"
             },
+            "fips-me-central-1": {
+              "credentialScope": {
+                "region": "me-central-1"
+              },
+              "deprecated": true,
+              "hostname": "waf-regional-fips.me-central-1.amazonaws.com"
+            },
             "fips-me-south-1": {
               "credentialScope": {
                 "region": "me-south-1"
@@ -19180,6 +19293,20 @@
               },
               "deprecated": true,
               "hostname": "waf-regional-fips.us-west-2.amazonaws.com"
+            },
+            "me-central-1": {
+              "credentialScope": {
+                "region": "me-central-1"
+              },
+              "hostname": "waf-regional.me-central-1.amazonaws.com",
+              "variants": [
+                {
+                  "hostname": "waf-regional-fips.me-central-1.amazonaws.com",
+                  "tags": [
+                    "fips"
+                  ]
+                }
+              ]
             },
             "me-south-1": {
               "credentialScope": {
@@ -19605,6 +19732,13 @@
               "deprecated": true,
               "hostname": "wafv2-fips.eu-west-3.amazonaws.com"
             },
+            "fips-me-central-1": {
+              "credentialScope": {
+                "region": "me-central-1"
+              },
+              "deprecated": true,
+              "hostname": "wafv2-fips.me-central-1.amazonaws.com"
+            },
             "fips-me-south-1": {
               "credentialScope": {
                 "region": "me-south-1"
@@ -19646,6 +19780,20 @@
               },
               "deprecated": true,
               "hostname": "wafv2-fips.us-west-2.amazonaws.com"
+            },
+            "me-central-1": {
+              "credentialScope": {
+                "region": "me-central-1"
+              },
+              "hostname": "wafv2.me-central-1.amazonaws.com",
+              "variants": [
+                {
+                  "hostname": "wafv2-fips.me-central-1.amazonaws.com",
+                  "tags": [
+                    "fips"
+                  ]
+                }
+              ]
             },
             "me-south-1": {
               "credentialScope": {
@@ -20741,6 +20889,28 @@
             "cn-northwest-1": {}
           }
         },
+        "kendra-ranking": {
+          "defaults": {
+            "dnsSuffix": "api.amazonwebservices.com.cn",
+            "variants": [
+              {
+                "dnsSuffix": "api.amazonwebservices.com.cn",
+                "hostname": "{service}-fips.{region}.{dnsSuffix}",
+                "tags": [
+                  "fips"
+                ]
+              }
+            ]
+          },
+          "endpoints": {
+            "cn-north-1": {
+              "hostname": "kendra-ranking.cn-north-1.api.amazonwebservices.com.cn"
+            },
+            "cn-northwest-1": {
+              "hostname": "kendra-ranking.cn-northwest-1.api.amazonwebservices.com.cn"
+            }
+          }
+        },
         "kinesis": {
           "endpoints": {
             "cn-north-1": {},
@@ -20751,6 +20921,11 @@
           "endpoints": {
             "cn-north-1": {},
             "cn-northwest-1": {}
+          }
+        },
+        "kinesisvideo": {
+          "endpoints": {
+            "cn-north-1": {}
           }
         },
         "kms": {
@@ -23955,6 +24130,28 @@
                   ]
                 }
               ]
+            }
+          }
+        },
+        "kendra-ranking": {
+          "defaults": {
+            "dnsSuffix": "api.aws",
+            "variants": [
+              {
+                "dnsSuffix": "api.aws",
+                "hostname": "{service}-fips.{region}.{dnsSuffix}",
+                "tags": [
+                  "fips"
+                ]
+              }
+            ]
+          },
+          "endpoints": {
+            "us-gov-east-1": {
+              "hostname": "kendra-ranking.us-gov-east-1.api.aws"
+            },
+            "us-gov-west-1": {
+              "hostname": "kendra-ranking.us-gov-west-1.api.aws"
             }
           }
         },

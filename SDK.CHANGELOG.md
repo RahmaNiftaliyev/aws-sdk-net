@@ -1,3 +1,81 @@
+### 3.7.460.0 (2023-01-12 19:24 UTC)
+* CleanRooms (3.7.100.0)
+	* Initial release of AWS Clean Rooms
+* CloudWatchLogs (3.7.103.0)
+	* Bug fix: logGroupName is now not a required field in GetLogEvents, FilterLogEvents, GetLogGroupFields, and DescribeLogStreams APIs as logGroupIdentifier can be provided instead
+* Lambda (3.7.103.0)
+	* Add support for MaximumConcurrency parameter for SQS event source. Customers can now limit the maximum concurrent invocations for their SQS Event Source Mapping.
+* MediaConvert (3.7.103.0)
+	* The AWS Elemental MediaConvert SDK has added support for compact DASH manifest generation, audio normalization using TruePeak measurements, and the ability to clip the sample range in the color corrector.
+* SecretsManager (3.7.101.8)
+	* Update documentation for new ListSecrets and DescribeSecret parameters
+* Core 3.7.103.15
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.459.0 (2023-01-11 19:17 UTC)
+* Kendra (3.7.102.0)
+	* This release adds support to new document types - RTF, XML, XSLT, MS_EXCEL, CSV, JSON, MD
+
+### 3.7.458.0 (2023-01-10 19:19 UTC)
+* LocationService (3.7.101.0)
+	* This release adds support for two new route travel models, Bicycle and Motorcycle which can be used with Grab data source.
+* RDS (3.7.114.0)
+	* This release adds support for configuring allocated storage on the CreateDBInstanceReadReplica, RestoreDBInstanceFromDBSnapshot, and RestoreDBInstanceToPointInTime APIs.
+* Core 3.7.103.14
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.457.0 (2023-01-09 19:54 UTC)
+* ECRPublic (3.7.101.0)
+	* This release for Amazon ECR Public makes several change to bring the SDK into sync with the API.
+* KendraRanking (3.7.100.0)
+	* Introducing Amazon Kendra Intelligent Ranking, a new set of Kendra APIs that leverages Kendra semantic ranking capabilities to improve the quality of search results from other search services (i.e. OpenSearch, ElasticSearch, Solr).
+* NetworkFirewall (3.7.102.0)
+	* Network Firewall now supports the Suricata rule action reject, in addition to the actions pass, drop, and alert.
+* RAM (3.7.101.0)
+	* Enabled FIPS aws-us-gov endpoints in SDK.
+* WorkSpacesWeb (3.7.101.0)
+	* This release adds support for a new portal authentication type: AWS IAM Identity Center (successor to AWS Single Sign-On).
+* Core 3.7.103.13
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.456.0 (2023-01-06 19:20 UTC)
+* ACMPCA (3.7.102.0)
+	* Added revocation parameter validation: bucket names must match S3 bucket naming rules and CNAMEs conform to RFC2396 restrictions on the use of special characters in URIs.
+* AuditManager (3.7.102.0)
+	* This release introduces a new data retention option in your Audit Manager settings. You can now use the DeregistrationPolicy parameter to specify if you want to delete your data when you deregister Audit Manager.
+* Core 3.7.103.12
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.455.0 (2023-01-05 19:23 UTC)
+* AmplifyBackend (3.7.101.0)
+	* Updated GetBackendAPIModels response to include ModelIntrospectionSchema json string
+* AppRunner (3.7.103.0)
+	* This release adds support of securely referencing secrets and configuration data that are stored in Secrets Manager and SSM Parameter Store by adding them as environment secrets in your App Runner service.
+* Connect (3.7.111.0)
+	* Documentation update for a new Initiation Method value in DescribeContact API
+* EMRServerless (3.7.102.0)
+	* Adds support for customized images. You can now provide runtime images when creating or updating EMR Serverless Applications.
+* Lightsail (3.7.101.38)
+	* Documentation updates for Amazon Lightsail.
+* MWAA (3.7.100.49)
+	* MWAA supports Apache Airflow version 2.4.3.
+* RDS (3.7.113.0)
+	* This release adds support for specifying which certificate authority (CA) to use for a DB instance's server certificate during DB instance creation, as well as other CA enhancements.
+* Core 3.7.103.11
+	* All services packages updated to require new Core
+
+### 3.7.454.0 (2023-01-04 19:21 UTC)
+* ApplicationAutoScaling (3.7.101.0)
+	* Customers can now use the existing DescribeScalingActivities API to also see the detailed and machine-readable reasons for Application Auto Scaling not scaling their resources and, if needed, take the necessary corrective actions.
+* CloudWatchLogs (3.7.102.27)
+	* Update to remove sequenceToken as a required field in PutLogEvents calls.
+* SimpleSystemsManagement (3.7.103.0)
+	* Adding support for QuickSetup Document Type in Systems Manager
+
 ### 3.7.453.1 (2023-01-04 00:34 UTC)
 * Core 3.7.103.10
 	* Fix profile resolution when using AWS SSO by updating credentials factory to consider sso-session if present.
