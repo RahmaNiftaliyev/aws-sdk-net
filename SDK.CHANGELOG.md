@@ -1,3 +1,33 @@
+### 3.7.462.0 (2023-01-17 19:19 UTC)
+* BillingConductor (3.7.104.0)
+	* This release adds support for SKU Scope for pricing plans.
+* Cloud9 (3.7.101.0)
+	* Added minimum value to AutomaticStopTimeMinutes parameter.
+* Imagebuilder (3.7.101.0)
+	* Add support for AWS Marketplace product IDs as input during CreateImageRecipe for the parent-image parameter. Add support for listing third-party components.
+* NetworkFirewall (3.7.103.0)
+	* Network Firewall now allows creation of dual stack endpoints, enabling inspection of IPv6 traffic.
+* Core 3.7.103.17
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.461.1 (2023-01-17 15:00 UTC)
+* DynamoDBv2 (3.7.101.25)
+	* Fix DynamoDB attribute mapping crash due to empty map and FromDocument crash when document contains nulls
+
+### 3.7.461.0 (2023-01-13 19:28 UTC)
+* Connect (3.7.112.0)
+	* This release updates the responses of UpdateContactFlowContent, UpdateContactFlowMetadata, UpdateContactFlowName and DeleteContactFlow API with empty responses.
+* EC2 (3.7.115.0)
+	* Documentation updates for EC2.
+* Outposts (3.7.101.0)
+	* This release adds POWER_30_KVA as an option for PowerDrawKva. PowerDrawKva is part of the RackPhysicalProperties structure in the CreateSite request.
+* ResourceGroups (3.7.101.0)
+	* AWS Resource Groups customers can now turn on Group Lifecycle Events in their AWS account. When you turn this on, Resource Groups monitors your groups for changes to group state or membership. Those changes are sent to Amazon EventBridge as events that you can respond to using rules you create.
+* Core 3.7.103.16
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.460.0 (2023-01-12 19:24 UTC)
 * CleanRooms (3.7.100.0)
 	* Initial release of AWS Clean Rooms
