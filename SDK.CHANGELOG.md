@@ -1,3 +1,40 @@
+### 3.7.470.0 (2023-01-27 19:30 UTC)
+* ApplicationAutoScaling (3.7.102.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* AppStream (3.7.102.0)
+	* Fixing the issue where Appstream waiters hang for fleet_started and fleet_stopped.
+* ElasticBeanstalk (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* FIS (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* Glacier (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* Greengrass (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* GreengrassV2 (3.7.102.0)
+	* Enabled FIPS endpoints for GovCloud (US) in SDK.
+* MediaTailor (3.7.103.0)
+	* This release introduces the As Run logging type, along with API and documentation updates.
+* Outposts (3.7.102.0)
+	* Adding support for payment term in GetOrder, CreateOrder responses.
+* SageMaker (3.7.117.0)
+	* This release supports running SageMaker Training jobs with container images that are in a private Docker registry.
+* SageMakerRuntime (3.7.101.0)
+	* Amazon SageMaker Runtime which supports InvokeEndpointAsync asynchronously can now invoke endpoints with custom timeout values. Asynchronous invocations support longer processing times.
+* ServerlessApplicationRepository (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+
+### 3.7.469.0 (2023-01-26 19:21 UTC)
+* EventBridge (3.7.101.0)
+	* Minor comments for Redshift Serverless workgroup target support.
+* IoTFleetWise (3.7.103.0)
+	* Add model validation to BatchCreateVehicle and BatchUpdateVehicle operations that invalidate requests with an empty vehicles list.
+* S3 (3.7.102.0)
+	* Allow FIPS to be used with path-style URLs.
+* Core 3.7.103.24
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.468.0 (2023-01-25 19:38 UTC)
 * CloudFormation (3.7.103.0)
 	* Enabled FIPS aws-us-gov endpoints in SDK.
