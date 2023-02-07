@@ -1,3 +1,74 @@
+### 3.7.477.0 (2023-02-06 19:29 UTC)
+* ComputeOptimizer (3.7.103.0)
+	* AWS Compute optimizer can now infer if Kafka is running on an instance.
+* CustomerProfiles (3.7.103.0)
+	* This release deprecates the PartyType and Gender enum data types from the Profile model and replaces them with new PartyTypeString and GenderString attributes, which accept any string of length up to 255.
+* FraudDetector (3.7.101.0)
+	* My AWS Service (Amazon Fraud Detector) - This release introduces Cold Start Model Training which optimizes training for small datasets and adds intelligent methods for treating unlabeled data. You can now train Online Fraud Insights or Transaction Fraud Insights models with minimal historical-data.
+* MediaConvert (3.7.105.0)
+	* The AWS Elemental MediaConvert SDK has added improved scene change detection capabilities and a bandwidth reduction filter, along with video quality enhancements, to the AVC encoder.
+* Outposts (3.7.104.0)
+	* Adds OrderType to Order structure. Adds PreviousOrderId and PreviousLineItemId to LineItem structure. Adds new line item status REPLACED. Increases maximum length of pagination token.
+* Core 3.7.104.3
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.476.0 (2023-02-03 19:25 UTC)
+* Proton (3.7.104.0)
+	* Add new GetResourcesSummary API
+* Redshift (3.7.101.1)
+	* Corrects descriptions of the parameters for the API operations RestoreFromClusterSnapshot, RestoreTableFromClusterSnapshot, and CreateCluster.
+* Core 3.7.104.2
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.475.0 (2023-02-02 19:44 UTC)
+* AppConfig (3.7.101.0)
+	* AWS AppConfig introduces KMS customer-managed key (CMK) encryption of configuration data, along with AWS Secrets Manager as a new configuration data source. S3 objects using SSE-KMS encryption and SSM Parameter Store SecureStrings are also now supported.
+* Connect (3.7.114.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* EC2 (3.7.121.0)
+	* Documentation updates for EC2.
+* ElasticLoadBalancingV2 (3.7.100.66)
+	* The GWLB Flex Health Check project updates the default values of healthy-threshold-count from 3 to 5 and unhealthy-threshold-count from 3 to 2
+* Keyspaces (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* QuickSight (3.7.104.0)
+	* QuickSight support for Radar Chart and Dashboard Publish Options
+* Redshift (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* SSOAdmin (3.7.101.0)
+	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
+* Core 3.7.104.1
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.474.0 (2023-02-02 14:49 UTC)
+* S3 (3.7.103.0)
+	* Performance optimization for endpoint resolvers for S3.
+* S3Control (3.7.106.0)
+	* Performance optimization for endpoint resolvers for S3Control.
+* SecurityToken (3.7.101.0)
+	* Performance optimization for endpoint resolvers for STS.
+* Core 3.7.104.0
+	* Add Sensitive property to AWSPropertyAttribute and use it to mark sensitive data.
+	* All services packages updated to require new Core
+
+### 3.7.473.0 (2023-02-01 19:22 UTC)
+* DevOpsGuru (3.7.101.0)
+	* This release adds filter support ListAnomalyForInsight API.
+* ForecastService (3.7.101.0)
+	* This release will enable customer select INCREMENTAL as ImportModel in Forecast's CreateDatasetImportJob API. Verified latest SDK containing required attribute, following https://w.amazon.com/bin/view/AWS-Seer/Launch/Trebuchet/
+* IdentityManagement (3.7.100.65)
+	* Documentation updates for AWS Identity and Access Management (IAM).
+* MediaTailor (3.7.104.0)
+	* The AWS Elemental MediaTailor SDK for Channel Assembly has added support for program updates, and the ability to clip the end of VOD sources in programs.
+* SimpleNotificationService (3.7.101.0)
+	* Additional attributes added for set-topic-attributes.
+* Core 3.7.103.26
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.472.0 (2023-01-31 19:45 UTC)
 * AccessAnalyzer (3.7.103.0)
 	* Enabled FIPS endpoints for GovCloud (US) regions in SDK.
