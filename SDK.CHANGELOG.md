@@ -1,3 +1,69 @@
+### 3.7.481.0 (2023-02-10 19:22 UTC)
+* AutoScaling (3.7.103.0)
+	* You can now either terminate/replace, ignore, or wait for EC2 Auto Scaling instances on standby or protected from scale in. Also, you can also roll back changes from a failed instance refresh.
+* Connect (3.7.115.0)
+	* This update provides the Wisdom session ARN for contacts enabled for Wisdom in the chat channel.
+* EC2 (3.7.122.0)
+	* Adds support for waiters that automatically poll for an imported snapshot until it reaches the completed state.
+* Polly (3.7.106.0)
+	* Amazon Polly adds two new neural Japanese voices - Kazuha, Tomoko
+* SageMaker (3.7.119.0)
+	* Amazon SageMaker Autopilot adds support for selecting algorithms in CreateAutoMLJob API.
+* SimpleNotificationService (3.7.101.8)
+	* This release adds support for SNS X-Ray active tracing as well as other updates.
+* Core 3.7.105.1
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.480.0 (2023-02-10 01:18 UTC)
+* S3 (3.7.103.7)
+	* Fixed an issue where ListBucketMetricsConfigurations was not returning any result for existing bucket metrics configurations. Fix issue making S3 metadata be case insensitive.
+* Core 3.7.105.0
+	* Add support for AWS_CONFIG_FILE. Perform case-insensitive comparison for policy action names. Add missing obsolete message for DoesS3BucketExistAsync. Fix issue with updating credential profiles that are partial configured in both config and credentials file.
+
+### 3.7.479.0 (2023-02-09 19:28 UTC)
+* ChimeSDKMeetings (3.7.100.71)
+	* Documentation updates for Chime Meetings SDK
+* CloudWatchEvidently (3.7.101.0)
+	* Updated entity overrides parameter to accept up to 2500 overrides or a total of 40KB.
+* EMRContainers (3.7.102.0)
+	* EMR on EKS allows configuring retry policies for job runs through the StartJobRun API. Using retry policies, a job cause a driver pod to be restarted automatically if it fails or is deleted. The job's status can be seen in the DescribeJobRun and ListJobRun APIs and monitored using CloudWatch events.
+* LexModelsV2 (3.7.102.0)
+	* AWS Lex now supports Network of Bots.
+* LexRuntimeV2 (3.7.101.0)
+	* AWS Lex now supports Network of Bots.
+* Lightsail (3.7.101.60)
+	* Documentation updates for Lightsail
+* MigrationHubRefactorSpaces (3.7.102.0)
+	* This release adds support for creating environments with a network fabric type of NONE
+* WorkDocs (3.7.101.55)
+	* Doc only update for the WorkDocs APIs.
+* WorkSpaces (3.7.104.51)
+	* Removed Windows Server 2016 BYOL and made changes based on IAM campaign.
+* Core 3.7.104.6
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.478.0 (2023-02-08 19:21 UTC)
+* Backup (3.7.102.0)
+	* This release added one attribute (resource name) in the output model of our 9 existing APIs in AWS backup so that customers will see the resource name at the output. No input required from Customers.
+* CloudFront (3.7.104.0)
+	* CloudFront Origin Access Control extends support to AWS Elemental MediaStore origins.
+* Glue (3.7.107.0)
+	* DirectJDBCSource + Glue 4.0 streaming options
+* LakeFormation (3.7.102.0)
+	* This release removes the LFTagpolicyResource expression limits.
+* Core 3.7.104.5
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.477.1 (2023-02-07 19:19 UTC)
+* Transfer (3.7.104.25)
+	* Updated the documentation for the ImportCertificate API call, and added examples.
+* Core 3.7.104.4
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.477.0 (2023-02-06 19:29 UTC)
 * ComputeOptimizer (3.7.103.0)
 	* AWS Compute optimizer can now infer if Kafka is running on an instance.
