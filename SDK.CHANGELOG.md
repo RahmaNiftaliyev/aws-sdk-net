@@ -1,3 +1,30 @@
+### 3.7.484.0 (2023-02-15 20:11 UTC)
+* CloudTrail (3.7.104.0)
+	* This release adds an InsufficientEncryptionPolicyException type to the StartImport endpoint
+* ElasticFileSystem (3.7.101.51)
+	* Documentation update for EFS to support IAM best practices.
+* FraudDetector (3.7.102.0)
+	* This release introduces Lists feature which allows customers to reference a set of values in Fraud Detector's rules. With Lists, customers can dynamically manage these attributes in real time. Lists can be created/deleted and its contents can be modified using the Fraud Detector API.
+* Glue (3.7.108.0)
+	* Fix DirectJDBCSource not showing up in CLI code gen
+* Private5G (3.7.102.0)
+	* This release introduces a new StartNetworkResourceUpdate API, which enables return/replacement of hardware from a NetworkSite.
+* RDS (3.7.114.22)
+	* Database Activity Stream support for RDS for SQL Server.
+* WAFV2 (3.7.102.0)
+	* For protected CloudFront distributions, you can now use the AWS WAF Fraud Control account takeover prevention (ATP) managed rule group to block new login attempts from clients that have recently submitted too many failed login attempts.
+* Core 3.7.105.3
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.483.0 (2023-02-14 21:28 UTC)
+* AppConfig (3.7.102.0)
+	* AWS AppConfig now offers the option to set a version label on hosted configuration versions. Version labels allow you to identify specific hosted configuration versions based on an alternate versioning scheme that you define.
+* DataSync (3.7.103.0)
+	* With this launch, we are giving customers the ability to use older SMB protocol versions, enabling them to use DataSync to copy data to and from their legacy storage arrays.
+* EC2 (3.7.123.0)
+	* With this release customers can turn host maintenance on or off when allocating or modifying a supported dedicated host. Host maintenance is turned on by default for supported hosts.
+
 ### 3.7.482.0 (2023-02-13 19:19 UTC)
 * Account (3.7.101.0)
 	* This release of the Account Management API enables customers to view and manage whether AWS Opt-In Regions are enabled or disabled for their Account. For more information, see https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html
