@@ -1,3 +1,32 @@
+### 3.7.486.1 (2023-02-18 00:42 UTC)
+* DynamoDBv2 (3.7.101.48)
+	* Fix: Fix DynamoDBContext.FromDocument conversion for DateTime string without milliseconds with unit tests
+* Core 3.7.105.6
+	* Fix: Generate new SSO token if refresh token and access token are expired and options.GenerateNewToken is true. Override AuthenticationRegion from ClientConfig if specified.
+	* All services packages updated to require new Core
+
+### 3.7.486.0 (2023-02-17 19:20 UTC)
+* AppRunner (3.7.104.0)
+	* This release supports removing MaxSize limit for AutoScalingConfiguration.
+* Glue (3.7.109.0)
+	* Release of Delta Lake Data Lake Format for Glue Studio Service
+* Core 3.7.105.5
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.485.0 (2023-02-16 20:41 UTC)
+* ElasticMapReduce (3.7.102.0)
+	* This release provides customers the ability to define a timeout period for procuring capacity during a resize operation for Instance Fleet clusters. Customers can specify this timeout using the ResizeSpecifications parameter supported by RunJobFlow, ModifyInstanceFleet and AddInstanceFleet APIs.
+* IVS (3.7.101.17)
+	* Doc-only update. Updated text description in DeleteChannel, Stream, and StreamSummary.
+* ManagedGrafana (3.7.102.0)
+	* With this release Amazon Managed Grafana now supports inbound Network Access Control that helps you to restrict user access to your Grafana workspaces
+* WAFV2 (3.7.102.1)
+	* Added a notice for account takeover prevention (ATP). The interface incorrectly lets you to configure ATP response inspection in regional web ACLs in Region US East (N. Virginia), without returning an error. ATP response inspection is only available in web ACLs that protect CloudFront distributions.
+* Core 3.7.105.4
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.484.0 (2023-02-15 20:11 UTC)
 * CloudTrail (3.7.104.0)
 	* This release adds an InsufficientEncryptionPolicyException type to the StartImport endpoint
