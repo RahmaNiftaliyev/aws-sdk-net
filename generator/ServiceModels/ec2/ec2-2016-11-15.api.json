@@ -6555,7 +6555,7 @@
       "members":{
         "AllocationId":{"shape":"AllocationId"},
         "InstanceId":{"shape":"InstanceId"},
-        "PublicIp":{"shape":"String"},
+        "PublicIp":{"shape":"EipAllocationPublicIp"},
         "AllowReassociation":{
           "shape":"Boolean",
           "locationName":"allowReassociation"
@@ -7693,7 +7693,8 @@
       "type":"string",
       "enum":[
         "legacy-bios",
-        "uefi"
+        "uefi",
+        "uefi-preferred"
       ]
     },
     "BoxedDouble":{"type":"double"},
@@ -9866,10 +9867,7 @@
     },
     "CreateCustomerGatewayRequest":{
       "type":"structure",
-      "required":[
-        "BgpAsn",
-        "Type"
-      ],
+      "required":["Type"],
       "members":{
         "BgpAsn":{"shape":"Integer"},
         "PublicIp":{"shape":"String"},
@@ -19236,7 +19234,7 @@
       "type":"structure",
       "members":{
         "AssociationId":{"shape":"ElasticIpAssociationId"},
-        "PublicIp":{"shape":"String"},
+        "PublicIp":{"shape":"EipAllocationPublicIp"},
         "DryRun":{
           "shape":"Boolean",
           "locationName":"dryRun"
@@ -19916,6 +19914,7 @@
         "locationName":"item"
       }
     },
+    "EipAllocationPublicIp":{"type":"string"},
     "EipAssociationIdList":{
       "type":"list",
       "member":{
@@ -24888,6 +24887,10 @@
         "MaintenanceOptions":{
           "shape":"InstanceMaintenanceOptions",
           "locationName":"maintenanceOptions"
+        },
+        "CurrentInstanceBootMode":{
+          "shape":"InstanceBootModeValues",
+          "locationName":"currentInstanceBootMode"
         }
       }
     },
@@ -25039,6 +25042,13 @@
         "shape":"InstanceBlockDeviceMappingSpecification",
         "locationName":"item"
       }
+    },
+    "InstanceBootModeValues":{
+      "type":"string",
+      "enum":[
+        "legacy-bios",
+        "uefi"
+      ]
     },
     "InstanceCapacity":{
       "type":"structure",
@@ -30434,7 +30444,8 @@
         "OrganizationalUnitArns":{
           "shape":"OrganizationalUnitArnStringList",
           "locationName":"OrganizationalUnitArn"
-        }
+        },
+        "ImdsSupport":{"shape":"AttributeValue"}
       }
     },
     "ModifyInstanceAttributeRequest":{
