@@ -1,3 +1,35 @@
+### 3.7.501.0 (2023-03-10 19:26 UTC)
+* Ivschat (3.7.104.0)
+	* This release adds a new exception returned when calling AWS IVS chat UpdateLoggingConfiguration. Now UpdateLoggingConfiguration can return ConflictException when invalid updates are made in sequence to Logging Configurations.
+* SecretsManager (3.7.102.0)
+	* The type definitions of SecretString and SecretBinary now have a minimum length of 1 in the model to match the exception thrown when you pass in empty values.
+* Core 3.7.105.17
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.500.0 (2023-03-09 19:28 UTC)
+* CloudWatchEvidently (3.7.102.0)
+	* Updated entity override documentation
+* CodeArtifact (3.7.103.0)
+	* This release introduces the generic package format, a mechanism for storing arbitrary binary assets. It also adds a new API, PublishPackageVersion, to allow for publishing generic packages.
+* Connect (3.7.118.0)
+	* This release adds a new API, GetMetricDataV2, which returns metric data for Amazon Connect.
+* NetworkManager (3.7.101.51)
+	* This update provides example usage for TransitGatewayRouteTableArn.
+* QuickSight (3.7.106.0)
+	* This release has two changes: add state persistence feature for embedded dashboard and console in GenerateEmbedUrlForRegisteredUser API; add properties for hidden collapsed row dimensions in PivotTableOptions.
+* RedshiftDataAPIService (3.7.102.0)
+	* Added support for Redshift Serverless workgroup-arn wherever the WorkgroupName parameter is available.
+* SageMaker (3.7.122.0)
+	* Amazon SageMaker Inference now allows SSM access to customer's model container by setting the "EnableSSMAccess" parameter for a ProductionVariant in CreateEndpointConfig API.
+* ServiceDiscovery (3.7.101.0)
+	* Updated all AWS Cloud Map APIs to provide consistent throttling exception (RequestLimitExceeded)
+* SimpleEmailV2 (3.7.102.0)
+	* This release introduces a new recommendation in Virtual Deliverability Manager Advisor, which detects missing or misconfigured Brand Indicator for Message Identification (BIMI) DNS records for customer sending identities.
+* Core 3.7.105.16
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.499.0 (2023-03-08 19:27 UTC)
 * Athena (3.7.104.0)
 	* A new field SubstatementType is added to GetQueryExecution API, so customers have an error free way to detect the query type and interpret the result.
