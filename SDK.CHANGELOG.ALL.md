@@ -1,3 +1,41 @@
+### 3.7.507.0 (2023-03-17 18:22 UTC)
+* BillingConductor (3.7.105.0)
+	* This release adds a new filter to ListAccountAssociations API and a new filter to ListBillingGroups API.
+* ConfigService (3.7.102.0)
+	* This release adds resourceType enums for types released from October 2022 through February 2023.
+* DatabaseMigrationService (3.7.103.0)
+	* S3 setting to create AWS Glue Data Catalog. Oracle setting to control conversion of timestamp column. Support for Kafka SASL Plain authentication. Setting to map boolean from PostgreSQL to Redshift. SQL Server settings to force lob lookup on inline LOBs and to control access of database logs.
+* Core 3.7.106.1
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.506.0 (2023-03-17 13:51 UTC)
+* Core 3.7.106.0
+	* Align the default of HttpClientCacheSize to 1 across all the platforms; Configure ECSTaskCredentials to refresh 5 minutes before expiration time
+	* All services packages updated to require new Core
+
+### 3.7.505.0 (2023-03-16 18:22 UTC)
+* GuardDuty (3.7.101.0)
+	* Updated 9 APIs for feature enablement to reflect expansion of GuardDuty to features. Added new APIs and updated existing APIs to support RDS Protection GA.
+* ResourceExplorer2 (3.7.101.51)
+	* Documentation updates for APIs.
+* SageMakerRuntime (3.7.101.30)
+	* Documentation updates for SageMaker Runtime
+* Core 3.7.105.21
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.504.0 (2023-03-15 18:21 UTC)
+* MigrationHubStrategyRecommendations (3.7.103.0)
+	* This release adds the binary analysis that analyzes IIS application DLLs on Windows and Java applications on Linux to provide anti-pattern report without configuring access to the source code.
+* S3Control (3.7.108.0)
+	* Added support for S3 Object Lambda aliases.
+* SecurityLake (3.7.102.0)
+	* Make Create/Get/ListSubscribers APIs return resource share ARN and name so they can be used to validate the RAM resource share to accept. GetDatalake can be used to track status of UpdateDatalake and DeleteDatalake requests.
+* Core 3.7.105.20
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.503.0 (2023-03-14 18:29 UTC)
 * ApplicationAutoScaling (3.7.103.0)
 	* Application Auto Scaling customers can now use mathematical functions to customize the metric used with Target Tracking policies within the policy configuration itself, saving the cost and effort of publishing the customizations as a separate metric.
