@@ -1,3 +1,48 @@
+### 3.7.510.0 (2023-03-22 18:24 UTC)
+* IdentityManagement (3.7.100.98)
+	* Documentation updates for AWS Identity and Access Management (IAM).
+* IoTTwinMaker (3.7.103.0)
+	* This release adds support of adding metadata when creating a new scene or updating an existing scene.
+* NetworkManager (3.7.101.61)
+	* This release includes an update to create-transit-gateway-route-table-attachment, showing example usage for TransitGatewayRouteTableArn.
+* Pipes (3.7.102.0)
+	* This release improves validation on the ARNs in the API model
+* ResilienceHub (3.7.102.0)
+	* This release provides customers with the ability to import resources from within an EKS cluster and assess the resiliency of EKS cluster workloads.
+* SimpleSystemsManagement (3.7.104.0)
+	* This Patch Manager release supports creating, updating, and deleting Patch Baselines for AmazonLinux2023, AlmaLinux.
+* Core 3.7.106.4
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.509.0 (2023-03-21 18:24 UTC)
+* ChimeSDKMessaging (3.7.101.0)
+	* Amazon Chime SDK messaging customers can now manage streaming configuration for messaging data for archival and analysis.
+* CleanRooms (3.7.101.0)
+	* GA Release of AWS Clean Rooms, Added Tagging Functionality
+* EC2 (3.7.128.0)
+	* This release adds support for AWS Network Firewall, AWS PrivateLink, and Gateway Load Balancers to Amazon VPC Reachability Analyzer, and it makes the path destination optional as long as a destination address in the filter at source is provided.
+* IoTSiteWise (3.7.102.0)
+	* Provide support for tagging of data streams and enabling tag based authorization for property alias
+* Mgn (3.7.102.0)
+	* This release introduces the Import and export feature and expansion of the post-launch actions
+* Core 3.7.106.3
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.508.0 (2023-03-20 18:22 UTC)
+* ApplicationAutoScaling (3.7.104.0)
+	* With this release customers can now tag their Application Auto Scaling registered targets with key-value pairs and manage IAM permissions for all the tagged resources centrally.
+* Neptune (3.7.102.0)
+	* This release makes following few changes. db-cluster-identifier is now a required parameter of create-db-instance. describe-db-cluster will now return PendingModifiedValues and GlobalClusterIdentifier fields in the response.
+* S3Outposts (3.7.102.0)
+	* S3 On Outposts added support for endpoint status, and a failed endpoint reason, if any
+* WorkDocs (3.7.102.0)
+	* This release adds a new API, SearchResources, which enable users to search through metadata and content of folders, documents, document versions and comments in a WorkDocs site.
+* Core 3.7.106.2
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.507.0 (2023-03-17 18:22 UTC)
 * BillingConductor (3.7.105.0)
 	* This release adds a new filter to ListAccountAssociations API and a new filter to ListBillingGroups API.
