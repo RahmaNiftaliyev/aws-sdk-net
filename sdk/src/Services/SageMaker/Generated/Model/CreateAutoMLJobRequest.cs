@@ -97,7 +97,7 @@ namespace Amazon.SageMaker.Model
         /// <para>
         /// Defines the objective metric used to measure the predictive quality of an AutoML job.
         /// You provide an <a>AutoMLJobObjective$MetricName</a> and Autopilot infers whether to
-        /// minimize or maximize it.
+        /// minimize or maximize it. For , only <code>Accuracy</code> is supported.
         /// </para>
         /// </summary>
         public AutoMLJobObjective AutoMLJobObjective
@@ -195,8 +195,8 @@ namespace Amazon.SageMaker.Model
         /// <summary>
         /// Gets and sets the property ProblemType. 
         /// <para>
-        /// Defines the type of supervised learning available for the candidates. For more information,
-        /// see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development-problem-types.html">
+        /// Defines the type of supervised learning problem available for the candidates. For
+        /// more information, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development-problem-types.html">
         /// Amazon SageMaker Autopilot problem types and algorithm support</a>.
         /// </para>
         /// </summary>
@@ -234,7 +234,10 @@ namespace Amazon.SageMaker.Model
         /// <summary>
         /// Gets and sets the property Tags. 
         /// <para>
-        /// Each tag consists of a key and an optional value. Tag keys must be unique per resource.
+        /// An array of key-value pairs. You can use tags to categorize your Amazon Web Services
+        /// resources in different ways, for example, by purpose, owner, or environment. For more
+        /// information, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html">Tagging
+        /// Amazon Web ServicesResources</a>. Tag keys must be unique per resource.
         /// </para>
         /// </summary>
         [AWSProperty(Min=0, Max=50)]
