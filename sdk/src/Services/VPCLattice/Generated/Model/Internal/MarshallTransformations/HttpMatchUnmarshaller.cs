@@ -14,7 +14,7 @@
  */
 
 /*
- * Do not modify this file. This file is generated from the sagemaker-geospatial-2020-05-27.normal.json service model.
+ * Do not modify this file. This file is generated from the vpc-lattice-2022-11-30.normal.json service model.
  */
 using System;
 using System.Collections.Generic;
@@ -24,26 +24,26 @@ using System.Net;
 using System.Text;
 using System.Xml.Serialization;
 
-using Amazon.SageMakerGeospatial.Model;
+using Amazon.VPCLattice.Model;
 using Amazon.Runtime;
 using Amazon.Runtime.Internal;
 using Amazon.Runtime.Internal.Transform;
 using Amazon.Runtime.Internal.Util;
 using ThirdParty.Json.LitJson;
 
-namespace Amazon.SageMakerGeospatial.Model.Internal.MarshallTransformations
+namespace Amazon.VPCLattice.Model.Internal.MarshallTransformations
 {
     /// <summary>
-    /// Response Unmarshaller for TimeRangeFilterInput Object
+    /// Response Unmarshaller for HttpMatch Object
     /// </summary>  
-    public class TimeRangeFilterInputUnmarshaller : IUnmarshaller<TimeRangeFilterInput, XmlUnmarshallerContext>, IUnmarshaller<TimeRangeFilterInput, JsonUnmarshallerContext>
+    public class HttpMatchUnmarshaller : IUnmarshaller<HttpMatch, XmlUnmarshallerContext>, IUnmarshaller<HttpMatch, JsonUnmarshallerContext>
     {
         /// <summary>
         /// Unmarshaller the response from the service to the response class.
         /// </summary>  
         /// <param name="context"></param>
         /// <returns></returns>
-        TimeRangeFilterInput IUnmarshaller<TimeRangeFilterInput, XmlUnmarshallerContext>.Unmarshall(XmlUnmarshallerContext context)
+        HttpMatch IUnmarshaller<HttpMatch, XmlUnmarshallerContext>.Unmarshall(XmlUnmarshallerContext context)
         {
             throw new NotImplementedException();
         }
@@ -53,27 +53,33 @@ namespace Amazon.SageMakerGeospatial.Model.Internal.MarshallTransformations
         /// </summary>  
         /// <param name="context"></param>
         /// <returns></returns>
-        public TimeRangeFilterInput Unmarshall(JsonUnmarshallerContext context)
+        public HttpMatch Unmarshall(JsonUnmarshallerContext context)
         {
             context.Read();
             if (context.CurrentTokenType == JsonToken.Null) 
                 return null;
 
-            TimeRangeFilterInput unmarshalledObject = new TimeRangeFilterInput();
+            HttpMatch unmarshalledObject = new HttpMatch();
         
             int targetDepth = context.CurrentDepth;
             while (context.ReadAtDepth(targetDepth))
             {
-                if (context.TestExpression("EndTime", targetDepth))
+                if (context.TestExpression("headerMatches", targetDepth))
                 {
-                    var unmarshaller = DateTimeUnmarshaller.Instance;
-                    unmarshalledObject.EndTime = unmarshaller.Unmarshall(context);
+                    var unmarshaller = new ListUnmarshaller<HeaderMatch, HeaderMatchUnmarshaller>(HeaderMatchUnmarshaller.Instance);
+                    unmarshalledObject.HeaderMatches = unmarshaller.Unmarshall(context);
                     continue;
                 }
-                if (context.TestExpression("StartTime", targetDepth))
+                if (context.TestExpression("method", targetDepth))
                 {
-                    var unmarshaller = DateTimeUnmarshaller.Instance;
-                    unmarshalledObject.StartTime = unmarshaller.Unmarshall(context);
+                    var unmarshaller = StringUnmarshaller.Instance;
+                    unmarshalledObject.Method = unmarshaller.Unmarshall(context);
+                    continue;
+                }
+                if (context.TestExpression("pathMatch", targetDepth))
+                {
+                    var unmarshaller = PathMatchUnmarshaller.Instance;
+                    unmarshalledObject.PathMatch = unmarshaller.Unmarshall(context);
                     continue;
                 }
             }
@@ -82,12 +88,12 @@ namespace Amazon.SageMakerGeospatial.Model.Internal.MarshallTransformations
         }
 
 
-        private static TimeRangeFilterInputUnmarshaller _instance = new TimeRangeFilterInputUnmarshaller();        
+        private static HttpMatchUnmarshaller _instance = new HttpMatchUnmarshaller();        
 
         /// <summary>
         /// Gets the singleton.
         /// </summary>  
-        public static TimeRangeFilterInputUnmarshaller Instance
+        public static HttpMatchUnmarshaller Instance
         {
             get
             {

@@ -1,3 +1,74 @@
+### 3.7.518.0 (2023-04-03 18:22 UTC)
+* Glue (3.7.111.0)
+	* Add support for database-level federation
+* LakeFormation (3.7.104.0)
+	* Add support for database-level federation
+* LicenseManager (3.7.102.0)
+	* This release adds grant override options to the CreateGrantVersion API. These options can be used to specify grant replacement behavior during grant activation.
+* MWAA (3.7.101.0)
+	* This Amazon MWAA release adds the ability to customize the Apache Airflow environment by launching a shell script at startup. This shell script is hosted in your environment's Amazon S3 bucket. Amazon MWAA runs the script before installing requirements and initializing the Apache Airflow process.
+* ServiceCatalog (3.7.102.0)
+	* This release introduces Service Catalog support for Terraform open source. It enables 1. The notify* APIs to Service Catalog. These APIs are used by the terraform engine to notify the result of the provisioning engine execution. 2. Adds a new TERRAFORM_OPEN_SOURCE product type in CreateProduct API.
+* WAFV2 (3.7.104.0)
+	* For web ACLs that protect CloudFront protections, the default request body inspection size is now 16 KB, and you can use the new association configuration to increase the inspection size further, up to 64 KB. Sizes over 16 KB can incur additional costs.
+* Core 3.7.106.11
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.517.0 (2023-03-31 18:25 UTC)
+* EC2 (3.7.129.1)
+	* Documentation updates for EC2 On Demand Capacity Reservations
+* InternetMonitor (3.7.101.0)
+	* This release adds a new feature for Amazon CloudWatch Internet Monitor that enables customers to deliver internet measurements to Amazon S3 buckets as well as CloudWatch Logs.
+* ResilienceHub (3.7.102.6)
+	* Adding EKS related documentation for appTemplateBody
+* S3 (3.7.103.40)
+	* Documentation updates for Amazon S3
+* SageMakerFeatureStoreRuntime (3.7.102.0)
+	* In this release, you can now chose between soft delete and hard delete when calling the DeleteRecord API, so you have more flexibility when it comes to managing online store data.
+* ServerMigrationService (3.7.101.0)
+	* Deprecating AWS Server Migration Service.
+* Core 3.7.106.10
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.516.0 (2023-03-30 18:33 UTC)
+* Athena (3.7.106.0)
+	* Make DefaultExecutorDpuSize and CoordinatorDpuSize  fields optional  in StartSession
+* AutoScaling (3.7.104.0)
+	* Amazon EC2 Auto Scaling now supports Elastic Load Balancing traffic sources with the AttachTrafficSources, DetachTrafficSources, and DescribeTrafficSources APIs. This release also introduces a new activity status, "WaitingForConnectionDraining", for VPC Lattice to the DescribeScalingActivities API.
+* Batch (3.7.104.0)
+	* This feature allows Batch on EKS to support configuration of Pod Labels through Metadata for Batch on EKS Jobs.
+* ComputeOptimizer (3.7.104.0)
+	* This release adds support for HDD EBS volume types and io2 Block Express. We are also adding support for 61 new instance types and instances that have non consecutive runtime.
+* Drs (3.7.103.0)
+	* Adding a field to the replication configuration APIs to support the auto replicate new disks feature. We also deprecated RetryDataReplication.
+* EC2 (3.7.129.0)
+	* This release adds support for Tunnel Endpoint Lifecycle control, a new feature that provides Site-to-Site VPN customers with better visibility and control of their VPN tunnel maintenance updates.
+* ElasticMapReduce (3.7.103.0)
+	* Updated DescribeCluster and ListClusters API responses to include ErrorDetail that specifies error code, programmatically accessible error data,and an error message. ErrorDetail provides the underlying reason for cluster failure and recommends actions to simplify troubleshooting of EMR clusters.
+* Glue (3.7.110.0)
+	* This release adds support for AWS Glue Data Quality, which helps you evaluate and monitor the quality of your data and includes the API for creating, deleting, or updating data quality rulesets, runs and evaluations.
+* GuardDuty (3.7.103.0)
+	* Added EKS Runtime Monitoring feature support to existing detector, finding APIs and introducing new Coverage APIs
+* Imagebuilder (3.7.103.0)
+	* Adds support for new image workflow details and image vulnerability detection.
+* IVS (3.7.102.0)
+	* Amazon Interactive Video Service (IVS) now offers customers the ability to configure IVS channels to allow insecure RTMP ingest.
+* Kendra (3.7.103.0)
+	* AWS Kendra now supports featured results for a query.
+* NetworkFirewall (3.7.104.0)
+	* AWS Network Firewall added TLS inspection configurations to allow TLS traffic inspection.
+* SageMakerGeospatial (3.7.101.0)
+	* Amazon SageMaker geospatial capabilities now supports server-side encryption with customer managed KMS key and SageMaker notebooks with a SageMaker geospatial image in a Amazon SageMaker Domain with VPC only mode.
+* VPCLattice (3.7.100.0)
+	* General Availability (GA) release of Amazon VPC Lattice
+* WellArchitected (3.7.102.0)
+	* AWS Well-Architected SDK now supports getting consolidated report metrics and generating a consolidated report PDF.
+* Core 3.7.106.9
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.515.0 (2023-03-29 18:21 UTC)
 * OpenSearchServerless (3.7.101.0)
 	* This release includes two new exception types "ServiceQuotaExceededException" and "OcuLimitExceededException".
