@@ -14,7 +14,7 @@
  */
 
 /*
- * Do not modify this file. This file is generated from the wafv2-2019-07-29.normal.json service model.
+ * Do not modify this file. This file is generated from the proton-2020-07-20.normal.json service model.
  */
 using System;
 using System.Collections.Generic;
@@ -24,26 +24,26 @@ using System.Net;
 using System.Text;
 using System.Xml.Serialization;
 
-using Amazon.WAFV2.Model;
+using Amazon.Proton.Model;
 using Amazon.Runtime;
 using Amazon.Runtime.Internal;
 using Amazon.Runtime.Internal.Transform;
 using Amazon.Runtime.Internal.Util;
 using ThirdParty.Json.LitJson;
 
-namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
+namespace Amazon.Proton.Model.Internal.MarshallTransformations
 {
     /// <summary>
-    /// Response Unmarshaller for RequestBodyAssociatedResourceTypeConfig Object
+    /// Response Unmarshaller for ServiceSyncBlockerSummary Object
     /// </summary>  
-    public class RequestBodyAssociatedResourceTypeConfigUnmarshaller : IUnmarshaller<RequestBodyAssociatedResourceTypeConfig, XmlUnmarshallerContext>, IUnmarshaller<RequestBodyAssociatedResourceTypeConfig, JsonUnmarshallerContext>
+    public class ServiceSyncBlockerSummaryUnmarshaller : IUnmarshaller<ServiceSyncBlockerSummary, XmlUnmarshallerContext>, IUnmarshaller<ServiceSyncBlockerSummary, JsonUnmarshallerContext>
     {
         /// <summary>
         /// Unmarshaller the response from the service to the response class.
         /// </summary>  
         /// <param name="context"></param>
         /// <returns></returns>
-        RequestBodyAssociatedResourceTypeConfig IUnmarshaller<RequestBodyAssociatedResourceTypeConfig, XmlUnmarshallerContext>.Unmarshall(XmlUnmarshallerContext context)
+        ServiceSyncBlockerSummary IUnmarshaller<ServiceSyncBlockerSummary, XmlUnmarshallerContext>.Unmarshall(XmlUnmarshallerContext context)
         {
             throw new NotImplementedException();
         }
@@ -53,21 +53,33 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         /// </summary>  
         /// <param name="context"></param>
         /// <returns></returns>
-        public RequestBodyAssociatedResourceTypeConfig Unmarshall(JsonUnmarshallerContext context)
+        public ServiceSyncBlockerSummary Unmarshall(JsonUnmarshallerContext context)
         {
             context.Read();
             if (context.CurrentTokenType == JsonToken.Null) 
                 return null;
 
-            RequestBodyAssociatedResourceTypeConfig unmarshalledObject = new RequestBodyAssociatedResourceTypeConfig();
+            ServiceSyncBlockerSummary unmarshalledObject = new ServiceSyncBlockerSummary();
         
             int targetDepth = context.CurrentDepth;
             while (context.ReadAtDepth(targetDepth))
             {
-                if (context.TestExpression("DefaultSizeInspectionLimit", targetDepth))
+                if (context.TestExpression("latestBlockers", targetDepth))
+                {
+                    var unmarshaller = new ListUnmarshaller<SyncBlocker, SyncBlockerUnmarshaller>(SyncBlockerUnmarshaller.Instance);
+                    unmarshalledObject.LatestBlockers = unmarshaller.Unmarshall(context);
+                    continue;
+                }
+                if (context.TestExpression("serviceInstanceName", targetDepth))
                 {
                     var unmarshaller = StringUnmarshaller.Instance;
-                    unmarshalledObject.DefaultSizeInspectionLimit = unmarshaller.Unmarshall(context);
+                    unmarshalledObject.ServiceInstanceName = unmarshaller.Unmarshall(context);
+                    continue;
+                }
+                if (context.TestExpression("serviceName", targetDepth))
+                {
+                    var unmarshaller = StringUnmarshaller.Instance;
+                    unmarshalledObject.ServiceName = unmarshaller.Unmarshall(context);
                     continue;
                 }
             }
@@ -76,12 +88,12 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         }
 
 
-        private static RequestBodyAssociatedResourceTypeConfigUnmarshaller _instance = new RequestBodyAssociatedResourceTypeConfigUnmarshaller();        
+        private static ServiceSyncBlockerSummaryUnmarshaller _instance = new ServiceSyncBlockerSummaryUnmarshaller();        
 
         /// <summary>
         /// Gets the singleton.
         /// </summary>  
-        public static RequestBodyAssociatedResourceTypeConfigUnmarshaller Instance
+        public static ServiceSyncBlockerSummaryUnmarshaller Instance
         {
             get
             {

@@ -14,7 +14,7 @@
  */
 
 /*
- * Do not modify this file. This file is generated from the wafv2-2019-07-29.normal.json service model.
+ * Do not modify this file. This file is generated from the amplifyuibuilder-2021-08-11.normal.json service model.
  */
 using System;
 using System.Collections.Generic;
@@ -23,19 +23,19 @@ using System.IO;
 using System.Text;
 using System.Xml.Serialization;
 
-using Amazon.WAFV2.Model;
+using Amazon.AmplifyUIBuilder.Model;
 using Amazon.Runtime;
 using Amazon.Runtime.Internal;
 using Amazon.Runtime.Internal.Transform;
 using Amazon.Runtime.Internal.Util;
 using ThirdParty.Json.LitJson;
 
-namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
+namespace Amazon.AmplifyUIBuilder.Model.Internal.MarshallTransformations
 {
     /// <summary>
-    /// RequestBodyAssociatedResourceTypeConfig Marshaller
+    /// FormInputValuePropertyBindingProperties Marshaller
     /// </summary>
-    public class RequestBodyAssociatedResourceTypeConfigMarshaller : IRequestMarshaller<RequestBodyAssociatedResourceTypeConfig, JsonMarshallerContext> 
+    public class FormInputValuePropertyBindingPropertiesMarshaller : IRequestMarshaller<FormInputValuePropertyBindingProperties, JsonMarshallerContext> 
     {
         /// <summary>
         /// Unmarshaller the response from the service to the response class.
@@ -43,12 +43,18 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         /// <param name="requestObject"></param>
         /// <param name="context"></param>
         /// <returns></returns>
-        public void Marshall(RequestBodyAssociatedResourceTypeConfig requestObject, JsonMarshallerContext context)
+        public void Marshall(FormInputValuePropertyBindingProperties requestObject, JsonMarshallerContext context)
         {
-            if(requestObject.IsSetDefaultSizeInspectionLimit())
+            if(requestObject.IsSetField())
             {
-                context.Writer.WritePropertyName("DefaultSizeInspectionLimit");
-                context.Writer.Write(requestObject.DefaultSizeInspectionLimit);
+                context.Writer.WritePropertyName("field");
+                context.Writer.Write(requestObject.Field);
+            }
+
+            if(requestObject.IsSetProperty())
+            {
+                context.Writer.WritePropertyName("property");
+                context.Writer.Write(requestObject.Property);
             }
 
         }
@@ -56,7 +62,7 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         /// <summary>
         /// Singleton Marshaller.
         /// </summary>
-        public readonly static RequestBodyAssociatedResourceTypeConfigMarshaller Instance = new RequestBodyAssociatedResourceTypeConfigMarshaller();
+        public readonly static FormInputValuePropertyBindingPropertiesMarshaller Instance = new FormInputValuePropertyBindingPropertiesMarshaller();
 
     }
 }

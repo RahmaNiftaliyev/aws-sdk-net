@@ -14,7 +14,7 @@
  */
 
 /*
- * Do not modify this file. This file is generated from the wafv2-2019-07-29.normal.json service model.
+ * Do not modify this file. This file is generated from the amplifyuibuilder-2021-08-11.normal.json service model.
  */
 using System;
 using System.Collections.Generic;
@@ -23,19 +23,19 @@ using System.IO;
 using System.Text;
 using System.Xml.Serialization;
 
-using Amazon.WAFV2.Model;
+using Amazon.AmplifyUIBuilder.Model;
 using Amazon.Runtime;
 using Amazon.Runtime.Internal;
 using Amazon.Runtime.Internal.Transform;
 using Amazon.Runtime.Internal.Util;
 using ThirdParty.Json.LitJson;
 
-namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
+namespace Amazon.AmplifyUIBuilder.Model.Internal.MarshallTransformations
 {
     /// <summary>
-    /// AssociationConfig Marshaller
+    /// FormInputBindingPropertiesValue Marshaller
     /// </summary>
-    public class AssociationConfigMarshaller : IRequestMarshaller<AssociationConfig, JsonMarshallerContext> 
+    public class FormInputBindingPropertiesValueMarshaller : IRequestMarshaller<FormInputBindingPropertiesValue, JsonMarshallerContext> 
     {
         /// <summary>
         /// Unmarshaller the response from the service to the response class.
@@ -43,25 +43,23 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         /// <param name="requestObject"></param>
         /// <param name="context"></param>
         /// <returns></returns>
-        public void Marshall(AssociationConfig requestObject, JsonMarshallerContext context)
+        public void Marshall(FormInputBindingPropertiesValue requestObject, JsonMarshallerContext context)
         {
-            if(requestObject.IsSetRequestBody())
+            if(requestObject.IsSetBindingProperties())
             {
-                context.Writer.WritePropertyName("RequestBody");
+                context.Writer.WritePropertyName("bindingProperties");
                 context.Writer.WriteObjectStart();
-                foreach (var requestObjectRequestBodyKvp in requestObject.RequestBody)
-                {
-                    context.Writer.WritePropertyName(requestObjectRequestBodyKvp.Key);
-                    var requestObjectRequestBodyValue = requestObjectRequestBodyKvp.Value;
 
-                    context.Writer.WriteObjectStart();
+                var marshaller = FormInputBindingPropertiesValuePropertiesMarshaller.Instance;
+                marshaller.Marshall(requestObject.BindingProperties, context);
 
-                    var marshaller = RequestBodyAssociatedResourceTypeConfigMarshaller.Instance;
-                    marshaller.Marshall(requestObjectRequestBodyValue, context);
-
-                    context.Writer.WriteObjectEnd();
-                }
                 context.Writer.WriteObjectEnd();
+            }
+
+            if(requestObject.IsSetType())
+            {
+                context.Writer.WritePropertyName("type");
+                context.Writer.Write(requestObject.Type);
             }
 
         }
@@ -69,7 +67,7 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         /// <summary>
         /// Singleton Marshaller.
         /// </summary>
-        public readonly static AssociationConfigMarshaller Instance = new AssociationConfigMarshaller();
+        public readonly static FormInputBindingPropertiesValueMarshaller Instance = new FormInputBindingPropertiesValueMarshaller();
 
     }
 }

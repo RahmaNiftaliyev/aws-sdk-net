@@ -1,3 +1,58 @@
+### 3.7.521.0 (2023-04-06 18:24 UTC)
+* CloudFormation (3.7.105.0)
+	* Including UPDATE_COMPLETE as a failed status for DeleteStack waiter.
+* GreengrassV2 (3.7.103.0)
+	* Add support for SUCCEEDED value in coreDeviceExecutionStatus field. Documentation updates for Greengrass V2.
+* Proton (3.7.105.0)
+	* This release adds support for the AWS Proton service sync feature. Service sync enables managing an AWS Proton service (creating and updating instances) and all of it's corresponding service instances from a Git repository.
+* RDS (3.7.116.6)
+	* Adds and updates the SDK examples
+* Core 3.7.106.14
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.520.0 (2023-04-05 18:25 UTC)
+* AppRunner (3.7.105.0)
+	* App Runner adds support for seven new vCPU and memory configurations.
+* ConfigService (3.7.103.0)
+	* This release adds resourceType enums for types released in March 2023.
+* ECS (3.7.105.27)
+	* This is a document only updated to add information about Amazon Elastic Inference (EI).
+* IdentityStore (3.7.100.106)
+	* Documentation updates for Identity Store CLI command reference.
+* IVSRealTime (3.7.101.0)
+	* Fix ParticipantToken ExpirationTime format
+* NetworkFirewall (3.7.105.0)
+	* AWS Network Firewall now supports IPv6-only subnets.
+* ServiceCatalog (3.7.103.0)
+	* removed incorrect product type value
+* VPCLattice (3.7.100.4)
+	* This release removes the entities in the API doc model package for auth policies.
+* Core 3.7.106.13
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
+### 3.7.519.0 (2023-04-04 18:27 UTC)
+* AmplifyUIBuilder (3.7.101.0)
+	* Support StorageField and custom displays for data-bound options in form builder. Support non-string operands for predicates in collections. Support choosing client to get token from.
+* AutoScaling (3.7.104.3)
+	* Documentation updates for Amazon EC2 Auto Scaling
+* DataExchange (3.7.103.0)
+	* This release updates the value of MaxResults.
+* EC2 (3.7.130.0)
+	* C6in, M6in, M6idn, R6in and R6idn bare metal instances are powered by 3rd Generation Intel Xeon Scalable processors and offer up to 200 Gbps of network bandwidth.
+* ElasticInference (3.7.101.0)
+	* Updated public documentation for the Describe and Tagging APIs.
+* SageMaker (3.7.124.0)
+	* Amazon SageMaker Asynchronous Inference now allows customer's to receive failure model responses in S3 and receive success/failure model responses in SNS notifications.
+* SageMakerRuntime (3.7.102.0)
+	* Amazon SageMaker Asynchronous Inference now provides customers a FailureLocation as a response parameter in InvokeEndpointAsync API to capture the model failure responses.
+* WAFV2 (3.7.105.0)
+	* This release rolls back association config feature for webACLs that protect CloudFront protections.
+* Core 3.7.106.12
+	* Updating endpoints.json file.
+	* All services packages updated to require new Core
+
 ### 3.7.518.0 (2023-04-03 18:22 UTC)
 * Glue (3.7.111.0)
 	* Add support for database-level federation

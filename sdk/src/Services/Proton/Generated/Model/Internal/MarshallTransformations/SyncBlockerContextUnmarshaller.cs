@@ -14,7 +14,7 @@
  */
 
 /*
- * Do not modify this file. This file is generated from the wafv2-2019-07-29.normal.json service model.
+ * Do not modify this file. This file is generated from the proton-2020-07-20.normal.json service model.
  */
 using System;
 using System.Collections.Generic;
@@ -24,26 +24,26 @@ using System.Net;
 using System.Text;
 using System.Xml.Serialization;
 
-using Amazon.WAFV2.Model;
+using Amazon.Proton.Model;
 using Amazon.Runtime;
 using Amazon.Runtime.Internal;
 using Amazon.Runtime.Internal.Transform;
 using Amazon.Runtime.Internal.Util;
 using ThirdParty.Json.LitJson;
 
-namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
+namespace Amazon.Proton.Model.Internal.MarshallTransformations
 {
     /// <summary>
-    /// Response Unmarshaller for AssociationConfig Object
+    /// Response Unmarshaller for SyncBlockerContext Object
     /// </summary>  
-    public class AssociationConfigUnmarshaller : IUnmarshaller<AssociationConfig, XmlUnmarshallerContext>, IUnmarshaller<AssociationConfig, JsonUnmarshallerContext>
+    public class SyncBlockerContextUnmarshaller : IUnmarshaller<SyncBlockerContext, XmlUnmarshallerContext>, IUnmarshaller<SyncBlockerContext, JsonUnmarshallerContext>
     {
         /// <summary>
         /// Unmarshaller the response from the service to the response class.
         /// </summary>  
         /// <param name="context"></param>
         /// <returns></returns>
-        AssociationConfig IUnmarshaller<AssociationConfig, XmlUnmarshallerContext>.Unmarshall(XmlUnmarshallerContext context)
+        SyncBlockerContext IUnmarshaller<SyncBlockerContext, XmlUnmarshallerContext>.Unmarshall(XmlUnmarshallerContext context)
         {
             throw new NotImplementedException();
         }
@@ -53,21 +53,27 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         /// </summary>  
         /// <param name="context"></param>
         /// <returns></returns>
-        public AssociationConfig Unmarshall(JsonUnmarshallerContext context)
+        public SyncBlockerContext Unmarshall(JsonUnmarshallerContext context)
         {
             context.Read();
             if (context.CurrentTokenType == JsonToken.Null) 
                 return null;
 
-            AssociationConfig unmarshalledObject = new AssociationConfig();
+            SyncBlockerContext unmarshalledObject = new SyncBlockerContext();
         
             int targetDepth = context.CurrentDepth;
             while (context.ReadAtDepth(targetDepth))
             {
-                if (context.TestExpression("RequestBody", targetDepth))
+                if (context.TestExpression("key", targetDepth))
                 {
-                    var unmarshaller = new DictionaryUnmarshaller<string, RequestBodyAssociatedResourceTypeConfig, StringUnmarshaller, RequestBodyAssociatedResourceTypeConfigUnmarshaller>(StringUnmarshaller.Instance, RequestBodyAssociatedResourceTypeConfigUnmarshaller.Instance);
-                    unmarshalledObject.RequestBody = unmarshaller.Unmarshall(context);
+                    var unmarshaller = StringUnmarshaller.Instance;
+                    unmarshalledObject.Key = unmarshaller.Unmarshall(context);
+                    continue;
+                }
+                if (context.TestExpression("value", targetDepth))
+                {
+                    var unmarshaller = StringUnmarshaller.Instance;
+                    unmarshalledObject.Value = unmarshaller.Unmarshall(context);
                     continue;
                 }
             }
@@ -76,12 +82,12 @@ namespace Amazon.WAFV2.Model.Internal.MarshallTransformations
         }
 
 
-        private static AssociationConfigUnmarshaller _instance = new AssociationConfigUnmarshaller();        
+        private static SyncBlockerContextUnmarshaller _instance = new SyncBlockerContextUnmarshaller();        
 
         /// <summary>
         /// Gets the singleton.
         /// </summary>  
-        public static AssociationConfigUnmarshaller Instance
+        public static SyncBlockerContextUnmarshaller Instance
         {
             get
             {
